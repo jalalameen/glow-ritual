@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@theme{
+    --COLOR-primary:#514345;
+    --color-secondery:#1B1C1C;
+    --color-nav:#6A5C4E;
+    --font-inter:"inter";
+    --font--playfair:"playfair display"
+}
+@utility container{
+    @apply w-full max-w7xl mx-auto px-16;
+
+    @media (max-width:1024px){
+        container{
+            @apply px-12;
+        }
+    }
+    @media (max-width:768) {
+          container{
+           @apply px-8;
+        }
+        
+    }
+
+      @media (max-width:640) {
+          container{
+           @apply px-4;
+        }
+        
+    }
+}
+@utility row{
+    @apply{
+        flex item-center;
+    }
+}
+@utility icon-bt{
+    @apply pd-1.5 transition hover: scale -110px; ;
+}
+@utility nav-link{
+    font-inter font-semibold text-[14px] leading-4 transition hover:text-[#82505b];
+}
+@utility hero-image{
+    @apply absoulute inset-0 h-full w-full object-cover;
+}
