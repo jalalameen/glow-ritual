@@ -22,15 +22,17 @@
 
 <body>
     <!--------------header------------->
-    <header class="bg-white border-b-[#ee9e5] sticky top-0 z-50">
-        <div class="container">
-            <div class="row justify-between">
+    <header class=" bg-white  sticky top-0  border-b  border-b border-[#eee9e5]  z-50">
+        <div class="container ">
+            <div class="row justify-between ">
                 <!--logo-->
                 <a href="#"
-                    class="font-semibold font-inter whitespace-nowrap shrink-0 tracking-wide text[48px] text-[#82505B]">GLOW
+                    class="font-semibold font-inter whitespace-nowrap shrink-0 tracking-wide text[48px] text-[#82505B] py-[12px]">GLOW
                     RITUAL</a>
 
-                <nav class=" hidden
+                <nav class=" 
+                       py-[29px]
+                       hidden
                        lg:flex
                         items-center
                         gap-5
@@ -69,6 +71,28 @@
         </div>
     </header>
     <!----------hero section----------->
+    <section class=" relative min-h-150 overflow-hidden ">
+
+        <!-- desktop image-->
+         <img src="./assets/img/herosiction.jfif" alt="this is background imge" class="hero-image hidden lg:block">
+         <!--mobile image-->
+         <img src="./assets/img/hero-section-mobile.svg" alt="this is background mobile image" class="hero-image block lg:hidden">
+         <!--hero content-->
+         <div class=" container relative z-10 max-auto w-full max-w-7xl flex py-[305.5px] items-center justify-start px-[37.5px] ">
+            <!--hero text-->
+            <div class=" max-w-2xl  w-full text-start">
+                <!--small heading-->
+                <p class="pb-4 font-inter font-semibold leading-4  tracking-[2.8px] uppercase text-[#795905]">LUMINOUS ESSENTIALS</p>
+                <!--main header-->
+                <h1 class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery  sm:text-5xl md:text-[64px]">Radiance Redefined</h1>
+                <!--paragraph-->
+                <p class="font-inter text-[18px] leading-7 text-primary">Experience the intersection of advanced skin <br>
+science and high-end sensory rituals. Your path to <br>
+eternal glow starts here.</p>
+
+            </div>
+         </div>
+    </section>
 </body>
 
 </html>

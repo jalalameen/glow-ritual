@@ -1,44 +1,98 @@
 @import "tailwindcss";
-@theme{
-    --COLOR-primary:#514345;
-    --color-secondery:#1B1C1C;
-    --color-nav:#6A5C4E;
-    --font-inter:"inter";
-    --font--playfair:"playfair display"
-}
-@utility container{
-    @apply w-full max-w7xl mx-auto px-16;
 
-    @media (max-width:1024px){
-        container{
-            @apply px-12;
-        }
-    }
-    @media (max-width:768) {
-          container{
-           @apply px-8;
-        }
-        
-    }
 
-      @media (max-width:640) {
-          container{
-           @apply px-4;
-        }
-        
+/* ========================================
+   THEME
+   الألوان والخطوط الأساسية للمشروع
+======================================== */
+
+@theme {
+
+    --color-primary: #514345;
+    --color-secondery: #1B1C1C;
+    --color-nav: #6A5C4E;
+
+    --font-inter: "Inter";
+    --font-playfair: "Playfair Display";
+}
+
+
+/* ========================================
+   CONTAINER
+   الكونتينر الموحد للموقع
+======================================== */
+
+@utility container {
+
+    @apply w-full max-w-7xl mx-auto px-16;
+}
+
+
+/* Responsive Container */
+
+@media (max-width: 1024px) {
+
+    .container {
+        @apply px-12;
     }
 }
-@utility row{
-    @apply{
-        flex item-center;
+
+
+@media (max-width: 768px) {
+
+    .container {
+        @apply px-8;
     }
 }
-@utility icon-bt{
-    @apply pd-1.5 transition hover: scale -110px; ;
+
+
+@media (max-width: 640px) {
+
+    .container {
+        @apply px-4;
+    }
 }
-@utility nav-link{
-    font-inter font-semibold text-[14px] leading-4 transition hover:text-[#82505b];
+
+
+/* ========================================
+   ROW
+   صف يستخدم لترتيب العناصر أفقياً
+======================================== */
+
+@utility row {
+
+    @apply flex items-center;
 }
-@utility hero-image{
-    @apply absoulute inset-0 h-full w-full object-cover;
+
+
+/* ========================================
+   ICON BUTTON
+   خصائص أزرار الأيقونات
+======================================== */
+
+@utility icon-bt {
+
+    @apply pb-1.5 transition hover:scale-110;
+}
+
+
+/* ========================================
+   NAV LINK
+   روابط الـ Navigation
+======================================== */
+
+@utility nav-link {
+
+    @apply font-inter font-semibold text-[14px] leading-4 transition hover:text-[#82505B];
+}
+
+
+/* ========================================
+   HERO IMAGE
+   صورة خلفية الـ Hero
+======================================== */
+
+@utility hero-image {
+
+    @apply absolute inset-0 h-full w-full object-cover;
 }
