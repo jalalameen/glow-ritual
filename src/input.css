@@ -3,7 +3,6 @@
 
 /* ========================================
    THEME
-   الألوان والخطوط الأساسية للمشروع
 ======================================== */
 
 @theme {
@@ -19,7 +18,6 @@
 
 /* ========================================
    CONTAINER
-   الكونتينر الموحد للموقع
 ======================================== */
 
 @utility container {
@@ -27,8 +25,6 @@
     @apply w-full max-w-7xl mx-auto px-16;
 }
 
-
-/* Responsive Container */
 
 @media (max-width: 1024px) {
 
@@ -56,7 +52,6 @@
 
 /* ========================================
    ROW
-   صف يستخدم لترتيب العناصر أفقياً
 ======================================== */
 
 @utility row {
@@ -66,9 +61,18 @@
 
 
 /* ========================================
-   ICON BUTTON
-   خصائص أزرار الأيقونات
+   HEADER / NAVIGATION
 ======================================== */
+
+/* Icon Button */
+
+@utility icon-btn {
+
+    @apply transition hover:scale-110;
+}
+
+
+/* Mobile Menu Button */
 
 @utility icon-bt {
 
@@ -76,26 +80,221 @@
 }
 
 
-/* ========================================
-   NAV LINK
-   روابط الـ Navigation
-======================================== */
+/* Navigation Link */
 
 @utility nav-link {
 
-    @apply font-inter font-semibold text-[14px] leading-4 transition hover:text-[#82505B];
+    @apply font-inter text-[14px] font-semibold leading-4 transition hover:text-[#82505B];
+}
+
+
+/* Active Navigation Link */
+
+@utility nav-active {
+
+    @apply border-b border-[#82505B] p-1 text-[#82505B];
 }
 
 
 /* ========================================
-   HERO IMAGE
-   صورة خلفية الـ Hero
+   HERO
 ======================================== */
+
+/* Hero Image */
 
 @utility hero-image {
 
     @apply absolute inset-0 h-full w-full object-cover;
 }
-@utility card-section-3 {
-    
+
+
+/* Hero Content */
+
+@utility hero-content {
+
+    @apply relative z-10 flex items-center justify-start py-[305.5px];
+}
+
+
+/* Hero Small Heading */
+
+@utility hero-eyebrow {
+
+    @apply pb-4 font-inter text-[14px] font-semibold uppercase leading-4 tracking-[2.8px] text-[#795905];
+}
+
+
+/* ========================================
+   CURATED COLLECTIONS
+======================================== */
+
+/* Collection Header */
+
+@utility collection-header {
+
+    @apply flex items-end justify-between;
+}
+
+
+/* Browse All Link */
+
+@utility browse-link {
+
+    @apply pt-9 font-inter text-[14px] font-semibold leading-4 tracking-[0.7px] text-[#82505B] transition hover:opacity-70;
+}
+
+
+/* Mobile Category Heading */
+
+@utility category-heading {
+
+    @apply pb-6 text-center font-playfair text-[24px] font-medium leading-8;
+}
+
+
+/* Desktop Collection Card */
+
+@utility collection-card {
+
+    @apply relative block aspect-[3/4] overflow-hidden rounded-lg;
+}
+
+
+/* Collection Card Image */
+
+@utility collection-image {
+
+    @apply absolute inset-0 h-full w-full object-cover;
+}
+
+
+/* Collection Card Overlay */
+
+@utility collection-overlay {
+
+    @apply absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent;
+}
+
+
+/* Collection Card Title */
+
+@utility collection-title {
+
+    @apply absolute bottom-4 left-4 font-inter text-[14px] font-semibold uppercase leading-4 tracking-[1.4px] text-white;
+}
+
+
+/* Mobile Category Item */
+
+@utility category-item {
+
+    @apply flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2;
+}
+
+
+/* Mobile Category Circle */
+
+@utility category-circle {
+
+    @apply block h-20 w-20 rounded-full border border-solid border-[#F0EDED] p-1;
+}
+
+
+/* Mobile Category Image */
+
+@utility category-image {
+
+    @apply h-full w-full rounded-full object-cover;
+}
+
+
+/* Mobile Category Name */
+
+@utility category-name {
+
+    @apply font-inter text-[12px] font-medium uppercase leading-3.5 tracking-[0.36px];
+}
+
+
+/* Mobile Categories Row */
+
+@utility categories-row {
+
+    @apply flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8 pb-2 [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden;
+}
+
+
+/* Mobile Navigation Dots */
+
+@utility category-dot {
+
+    @apply h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B];
+}
+
+
+/* ========================================
+   BEST SELLERS
+======================================== */
+
+/* Product Card */
+
+@utility product-card {
+
+    @apply w-[320px] shrink-0;
+}
+
+
+/* Product Image Wrapper */
+
+@utility product-image-wrapper {
+
+    @apply relative h-100 w-[320px] overflow-hidden;
+}
+
+
+/* Product Image */
+
+@utility product-image {
+
+    @apply h-full w-full object-cover;
+}
+
+
+/* Wishlist Button */
+
+@utility wishlist-btn {
+
+    @apply absolute right-4 top-4 flex h-10 w-10 items-center justify-center;
+}
+
+
+/* Product Badge */
+
+@utility product-badge {
+
+    @apply absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5;
+}
+
+
+/* Product Name */
+
+@utility product-name {
+
+    @apply mt-4 font-playfair text-[24px] font-medium leading-8 text-secondery;
+}
+
+
+/* Product Price */
+
+@utility product-price {
+
+    @apply mt-1 font-inter text-[16px] font-normal leading-6 text-secondery;
+}
+
+
+/* Slider Arrow */
+
+@utility slider-arrow {
+
+    @apply flex h-10 w-10 items-center justify-center;
 }

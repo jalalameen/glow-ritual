@@ -19,543 +19,864 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
 
+
   <body>
-    <!--------------header------------->
-    <header class="bg-white sticky top-0 border-b border-[#eee9e5] z-50">
+
+
+    <!-------------- HEADER ------------->
+
+    <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
+
       <div class="container">
+
         <div class="row justify-between">
-          <!--logo-->
+
+          <!-- Logo -->
+
           <a
             href="#"
-            class="font-semibold font-playfair whitespace-nowrap shrink-0 tracking-wide text-[48px] text-[#82505B] py-[12px]"
-            >GLOW RITUAL</a
+            class="shrink-0 whitespace-nowrap py-[12px] font-playfair text-[48px] font-semibold tracking-wide text-[#82505B]"
           >
+            GLOW RITUAL
+          </a>
+
+
+          <!-- Navigation -->
 
           <nav
-            class="py-[29px] hidden lg:flex items-center gap-5 font-inter font-semibold text-nav leading-4 text-[14px]"
+            class="hidden items-center gap-5 py-[29px] font-inter text-[14px] font-semibold leading-4 text-nav lg:flex"
           >
-            <a href="#" class="nav-link">Skincare</a>
-            <a href="#" class="nav-link">Cosmetics</a>
-            <a href="#" class="nav-link">Perfumes</a>
-            <a href="#" class="text-[#82505b] border-b border-[#82505b] pd-1"
-              >New Arivales</a
-            >
-            <a href="#" class="nav-link">Best sellers</a>
-            <a href="#" class="nav-link">Rituals</a>
+
+            <a href="#" class="nav-link">
+              Skincare
+            </a>
+
+            <a href="#" class="nav-link">
+              Cosmetics
+            </a>
+
+            <a href="#" class="nav-link">
+              Perfumes
+            </a>
+
+            <a href="#" class="nav-active">
+              New Arivales
+            </a>
+
+            <a href="#" class="nav-link">
+              Best sellers
+            </a>
+
+            <a href="#" class="nav-link">
+              Rituals
+            </a>
+
           </nav>
-          <!--------icons--------->
-          <div class="flex items-center gap-4 xl:gap-6 text-[#82505b] shrink0">
+
+
+          <!-------- Icons --------->
+
+          <div
+            class="flex shrink-0 items-center gap-4 text-[#82505b] xl:gap-6"
+          >
+
             <button class="icon-btn hidden sm:block">
+
               <img
                 src="./assets/img/icons/searche.svg"
                 alt="this is image the icon searche"
               />
+
             </button>
+
+
             <button class="icon-btn hidden sm:block">
+
               <img
                 src="./assets/img/icons/hearticoons.svg"
                 alt="this is hert icon"
               />
+
             </button>
+
+
             <button class="icon-btn hidden sm:block">
+
               <img
                 src="./assets/img/icons/personal.svg"
                 alt="this is the icons prsonal"
               />
+
             </button>
+
+
             <button class="icon-btn hidden sm:block">
+
               <img
                 src="./assets/img/icons/Shopping-Cart.svg"
                 alt="this is the icon Shopping cart"
               />
+
             </button>
-            <!-------------mobile menu------------------->
-            <button class="icon-bt text-secondery lg:hidden text-lg">
-              <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+
+
+            <!------------- Mobile Menu ------------------->
+
+            <button class="icon-bt text-secondery text-lg lg:hidden">
+
+              <img
+                src="./assets/img/icons/mun.svg"
+                alt="this is mune icons"
+              />
+
             </button>
+
           </div>
+
         </div>
+
       </div>
+
     </header>
-    <!----------hero section----------->
+
+
+
+    <!---------- HERO SECTION ----------->
+
     <section class="relative min-h-150 overflow-hidden">
-      <!-- desktop image-->
+
+
+      <!-- Desktop Image -->
+
       <img
         src="./assets/img/herosiction.jfif"
         alt="this is background imge"
         class="hero-image hidden lg:block"
       />
-      <!--mobile image-->
+
+
+      <!-- Mobile Image -->
+
       <img
         src="./assets/img/hero-section-mobile.svg"
         alt="this is background mobile image"
         class="hero-image block lg:hidden"
       />
-      <!--hero content-->
-      <div
-        class="container relative z-10 flex py-[305.5px] items-center justify-start"
-      >
-        <!--hero text-->
-        <div class="max-w-2xl w-full text-start">
-          <!--small heading-->
-          <p
-            class="pb-4 font-inter font-semibold leading-4 tracking-[2.8px] uppercase text-[#795905]"
-          >
+
+
+      <!-- Hero Content -->
+
+      <div class="container hero-content">
+
+
+        <!-- Hero Text -->
+
+        <div class="w-full max-w-2xl text-start">
+
+
+          <!-- Small Heading -->
+
+          <p class="hero-eyebrow">
             LUMINOUS ESSENTIALS
           </p>
-          <!--main header-->
+
+
+          <!-- Main Heading -->
+
           <h1
             class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery sm:text-5xl md:text-[64px]"
           >
             Radiance Redefined
           </h1>
-          <!--paragraph-->
+
+
+          <!-- Paragraph -->
+
           <p class="font-inter text-[18px] leading-7 text-primary">
+
             Experience the intersection of advanced skin
             <br />
-            science and high-end sensory rituals. Your path to <br />
+
+            science and high-end sensory rituals. Your path to
+            <br />
+
             eternal glow starts here.
+
           </p>
+
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!------------- SECTION - CATEGORY GRID -------------------->
+
     <section class="w-full">
-      <!------------title section---------------->
-      <div class="container py-20 hidden md:block">
-        <div class="flex items-end justify-between">
-          <div class="font-playfair text-[32px] font-semibold leading-10">
-            <h2>Curated Collections</h2>
+
+
+      <!------------ Desktop Title Section ---------------->
+
+      <div class="container hidden py-20 md:block">
+
+        <div class="collection-header">
+
+
+          <!-- Title -->
+
+          <div
+            class="font-playfair text-[32px] font-semibold leading-10"
+          >
+
+            <h2>
+              Curated Collections
+            </h2>
+
             <img
               src="./assets/img/section3/Background.svg"
               alt="background line"
             />
+
           </div>
+
+
+          <!-- Browse All -->
+
           <a
             href=""
-            class="pt-9 pb-0 font-inter font-semibold text-[14px] leading-4 tracking-[0.7px] text-[#82505B] transition hover:opacity-70"
-            >Browse All</a
+            class="browse-link"
           >
+            Browse All
+          </a>
+
         </div>
+
       </div>
 
-      <!---------------Mobile: circular category cards--------------------------->
+
+
+      <!--------------- Mobile Category Cards --------------------------->
+
       <div class="container pt-12 md:hidden">
-        <h3
-          class="font-playfair text-[24px] font-medium not-italic leading-8 tracking-normal text-center align-middle pb-6"
-        >
+
+
+        <!-- Mobile Title -->
+
+        <h3 class="category-heading">
           Shop by Category
         </h3>
 
-        <!-- Scrollable row -->
-        <div
-          class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8 pb-2 [-ms-overflow-style:none] [scrollbar-none] [&::-webkit-scrollbar]:hidden"
-        >
+
+        <!-- Scrollable Row -->
+
+        <div class="categories-row">
+
+
+          <!-- Category 1 -->
+
           <a
             href="#cat-1"
             id="cat-1"
-            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+            class="category-item"
           >
-            <span
-              class="block h-20 w-20 rotate-0 rounded-full border-2 border-solid border-[#F0EDED] p-1 opacity-100"
-            >
+
+            <span class="category-circle">
+
               <img
                 src="./assets/img/section3/Face-Soap.jpg"
                 alt="this is face-soap"
-                class="h-full w-full rounded-full object-cover"
+                class="category-image"
               />
+
             </span>
-            <span
-              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
-              >SKINCARE</span
-            >
+
+            <span class="category-name">
+              SKINCARE
+            </span>
+
           </a>
+
+
+          <!-- Category 2 -->
 
           <a
             href="#cat-2"
             id="cat-2"
-            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+            class="category-item"
           >
-            <span
-              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
-            >
+
+            <span class="category-circle">
+
               <img
                 src="./assets/img/section3/Face-Wash-Gel.jpg"
                 alt="this is face-wash-gel"
-                class="h-full w-full rounded-full object-cover"
+                class="category-image"
               />
+
             </span>
-            <span
-              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
-              >COSMETICS</span
-            >
+
+            <span class="category-name">
+              COSMETICS
+            </span>
+
           </a>
+
+
+          <!-- Category 3 -->
 
           <a
             href="#cat-3"
             id="cat-3"
-            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+            class="category-item"
           >
-            <span
-              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
-            >
+
+            <span class="category-circle">
+
               <img
                 src="./assets/img/section3/Hair Mask2.jpg"
                 alt="this is hair"
-                class="h-full w-full rounded-full object-cover"
+                class="category-image"
               />
+
             </span>
-            <span
-              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
-              >PERFUMES</span
-            >
+
+            <span class="category-name">
+              PERFUMES
+            </span>
+
           </a>
+
+
+          <!-- Category 4 -->
 
           <a
             href="#cat-4"
             id="cat-4"
-            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+            class="category-item"
           >
-            <span
-              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
-            >
+
+            <span class="category-circle">
+
               <img
                 src="./assets/img/section3/Hair-Mask.jpg"
                 alt="this is hair mask"
-                class="h-full w-full rounded-full object-cover"
+                class="category-image"
               />
+
             </span>
-            <span
-              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
-              >HEALTH</span
-            >
+
+            <span class="category-name">
+              HEALTH
+            </span>
+
           </a>
+
+
+          <!-- Category 5 -->
 
           <a
             href="#cat-5"
             id="cat-5"
-            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+            class="category-item"
           >
-            <span
-              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
-            >
+
+            <span class="category-circle">
+
               <img
                 src="./assets/img/section3/Shampoo.jpg"
                 alt="this is hair shampoo"
-                class="h-full w-full rounded-full object-cover"
+                class="category-image"
               />
+
             </span>
-            <span
-              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
-              >CELLULITE CARE</span
-            >
+
+            <span class="category-name">
+              CELLULITE CARE
+            </span>
+
           </a>
+
         </div>
 
-        <!-- Dots navigation (بدون JS) -->
+
+
+        <!-- Dots Navigation -->
+
         <div class="mt-4 flex items-center justify-center gap-2">
+
+
           <a
             href="#cat-1"
             aria-label="Go to Skincare"
-            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+            class="category-dot"
           ></a>
+
+
           <a
             href="#cat-2"
             aria-label="Go to Cosmetics"
-            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+            class="category-dot"
           ></a>
+
+
           <a
             href="#cat-3"
             aria-label="Go to Perfumes"
-            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+            class="category-dot"
           ></a>
+
+
           <a
             href="#cat-4"
             aria-label="Go to Health"
-            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+            class="category-dot"
           ></a>
+
+
           <a
             href="#cat-5"
             aria-label="Go to Cellulite Care"
-            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+            class="category-dot"
           ></a>
+
         </div>
+
       </div>
 
-      <!---------------Desktop/Tablet: rectangular collection cards--------------------------->
+
+
+      <!--------------- Desktop / Tablet Collection Cards --------------------------->
+
       <div
         class="container hidden grid-cols-2 gap-4 md:grid md:grid-cols-3 md:gap-6 lg:grid-cols-5"
       >
+
+
+        <!-- Collection 1 -->
+
         <a
           href="#"
-          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+          class="collection-card"
         >
+
           <img
             src="./assets/img/section3/Face-Soap.jpg"
             alt="this is face-soap"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="collection-image"
           />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
-          ></div>
-          <span
-            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
-            >SKINCARE</span
-          >
+
+          <div class="collection-overlay"></div>
+
+          <span class="collection-title">
+            SKINCARE
+          </span>
+
         </a>
+
+
+        <!-- Collection 2 -->
 
         <a
           href="#"
-          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+          class="collection-card"
         >
+
           <img
             src="./assets/img/section3/Face-Wash-Gel.jpg"
             alt="this is face-wash-gel"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="collection-image"
           />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
-          ></div>
-          <span
-            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
-            >COSMETICS</span
-          >
+
+          <div class="collection-overlay"></div>
+
+          <span class="collection-title">
+            COSMETICS
+          </span>
+
         </a>
+
+
+        <!-- Collection 3 -->
 
         <a
           href="#"
-          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+          class="collection-card"
         >
+
           <img
             src="./assets/img/section3/Hair Mask2.jpg"
             alt="this is hair"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="collection-image"
           />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
-          ></div>
-          <span
-            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
-            >PERFUMES</span
-          >
+
+          <div class="collection-overlay"></div>
+
+          <span class="collection-title">
+            PERFUMES
+          </span>
+
         </a>
+
+
+        <!-- Collection 4 -->
 
         <a
           href="#"
-          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+          class="collection-card"
         >
+
           <img
             src="./assets/img/section3/Hair-Mask.jpg"
             alt="this is hair mask"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="collection-image"
           />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
-          ></div>
-          <span
-            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
-            >HEALTH</span
-          >
+
+          <div class="collection-overlay"></div>
+
+          <span class="collection-title">
+            HEALTH
+          </span>
+
         </a>
+
+
+        <!-- Collection 5 -->
 
         <a
           href="#"
-          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+          class="collection-card"
         >
+
           <img
             src="./assets/img/section3/Shampoo.jpg"
             alt="this is hair shampoo"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="collection-image"
           />
-          <div
-            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
-          ></div>
-          <span
-            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
-            >CELLULITE CARE</span
-          >
+
+          <div class="collection-overlay"></div>
+
+          <span class="collection-title">
+            CELLULITE CARE
+          </span>
+
         </a>
+
       </div>
+
     </section>
 
-    <!--the section is besst saller-->
-    <section class="bg-[#F6F3F2] py-20 mt-20">
+
+
+    <!------------- BEST SELLERS SECTION -------------------->
+
+    <section class="mt-20 bg-[#F6F3F2] py-20">
+
       <div class="mx-auto max-w-6xl">
+
+
         <!-- Section Header -->
+
         <div class="flex h-10 items-center justify-between">
+
+
           <!-- Title -->
+
           <h2
-            class="font-['Playfair_Display'] text-[32px] font-semibold leading-10 text-secondery"
+            class="font-playfair text-[32px] font-semibold leading-10 text-secondery"
           >
             The Best Sellers
           </h2>
 
+
           <!-- Slider Arrows -->
+
           <div class="flex items-center gap-2">
+
             <button
-              class="flex h-10 w-10 items-center justify-center"
+              class="slider-arrow"
               aria-label="Previous products"
             >
               ←
             </button>
 
+
             <button
-              class="flex h-10 w-10 items-center justify-center"
+              class="slider-arrow"
               aria-label="Next products"
             >
               →
             </button>
+
           </div>
+
         </div>
 
+
+
         <!-- Products -->
+
         <div class="mt-8 flex gap-6 overflow-hidden">
+
+
           <!-- Product Card 1 -->
-          <article class="w-[320px] shrink-0">
-            <div class="relative h-100 w-[320px] overflow-hidden">
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
               <img
                 src="./assets/img/section3/Face-Soap.jpg"
                 alt="Product 1"
-                class="h-full w-full object-cover"
+                class="product-image"
               />
 
+
               <!-- Heart -->
+
               <button
-                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                class="wishlist-btn"
                 aria-label="Add to wishlist"
               >
                 ♡
               </button>
 
-              <!-- Overlay -->
-              <span
-                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
-              >
+
+              <!-- Badge -->
+
+              <span class="product-badge">
                 Bestseller
               </span>
+
             </div>
 
-            <h3
-              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
-            >
+
+            <h3 class="product-name">
               Product Name
             </h3>
 
-            <p
-              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
-            >
+
+            <p class="product-price">
               $49.00
             </p>
+
           </article>
 
+
+
           <!-- Product Card 2 -->
-          <article class="w-[320px] shrink-0">
-            <div class="relative h-100 w-[320px] overflow-hidden">
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
               <img
                 src="./assets/img/section3/Face-Wash-Gel.jpg"
                 alt="Product 2"
-                class="h-full w-full object-cover"
+                class="product-image"
               />
 
+
               <button
-                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                class="wishlist-btn"
                 aria-label="Add to wishlist"
               >
                 ♡
               </button>
 
-              <span
-                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
-              >
+
+              <span class="product-badge">
                 Bestseller
               </span>
+
             </div>
 
-            <h3
-              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
-            >
+
+            <h3 class="product-name">
               Product Name
             </h3>
 
-            <p
-              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
-            >
+
+            <p class="product-price">
               $49.00
             </p>
+
           </article>
 
+
+
           <!-- Product Card 3 -->
-          <article class="w-[320px] shrink-0">
-            <div class="relative h-100 w-[320px] overflow-hidden">
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
               <img
                 src="./assets/img/section3/Hair Mask2.jpg"
                 alt="Product 3"
-                class="h-full w-full object-cover"
+                class="product-image"
               />
 
+
               <button
-                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                class="wishlist-btn"
                 aria-label="Add to wishlist"
               >
                 ♡
               </button>
 
-              <span
-                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
-              >
+
+              <span class="product-badge">
                 Bestseller
               </span>
+
             </div>
 
-            <h3
-              class="mt-4 font-playfair text-[24px] font-medium leading-8 text-secondery"
-            >
+
+            <h3 class="product-name">
               Product Name
             </h3>
 
-            <p
-              class="mt-1 font-inter text-[16px] font-normal leading-6 text-secondery"
-            >
+
+            <p class="product-price">
               $49.00
             </p>
+
           </article>
 
+
+
           <!-- Product Card 4 -->
-          <article class="w-[320px] shrink-0">
-            <div class="relative h-100 w-[320px] overflow-hidden">
+
+          <article class="product-card">
+
+            <div class="product-image-wrapper">
+
               <img
                 src="./assets/img/section3/Hair-Mask.jpg"
                 alt="Product 4"
-                class="h-full w-full object-cover"
+                class="product-image"
               />
 
+
               <button
-                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                class="wishlist-btn"
                 aria-label="Add to wishlist"
               >
                 ♡
               </button>
 
-              <span
-                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
-              >
+
+              <span class="product-badge">
                 Bestseller
               </span>
+
             </div>
 
-            <h3
-              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
-            >
+
+            <h3 class="product-name">
               Product Name
             </h3>
 
-            <p
-              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
-            >
+
+            <p class="product-price">
               $49.00
             </p>
+
           </article>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- Golden Hour Collection -->
+<section
+  class="relative mx-auto mt-20 h-[500px] max-w-[1152px] overflow-hidden rounded-2xl bg-[#1B1C1C]"
+>
+  <!-- Background Image -->
+  <div class="absolute inset-0 opacity-60">
+    <img
+      src="./assets/img/bg-section-4.jfif"
+      alt="Golden Hour Collection"
+      class="h-full w-full object-cover"
+    />
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-[#1B1C1C]/30"></div>
+
+  <!-- Main Content -->
+  <div
+    class="relative z-10 flex h-full w-full items-center px-8
+           sm:px-10
+           md:px-12
+           lg:w-1/2 lg:px-16"
+  >
+    <div class="flex flex-col items-start">
+
+      <!-- Heading -->
+      <h2
+        class="whitespace-nowrap font-playfair text-[40px] font-bold leading-[48px]
+               tracking-[-0.8px] text-[#FFDF9F]
+               sm:text-[48px] sm:leading-[56px]
+               md:text-[56px] md:leading-[64px]
+               lg:text-[64px] lg:leading-[72px] lg:tracking-[-1.28px]"
+      >
+        The Golden Hour <br> Collection
+      </h2>
+
+      <!-- Description -->
+      <p
+        class="mt-5 max-w-[576px]
+               font-inter text-[16px] font-normal leading-6
+               text-[#E4E2E1]
+               sm:mt-6 sm:text-[18px] sm:leading-7"
+      >
+        Capture the ethereal glow of the setting sun. Infused with 24k gold
+        flakes and rare botanical extracts for an unparalleled radiance.
+      </p>
+
+      <!-- Button -->
+      <a
+        href="#"
+        class="mt-7 flex h-[50px] items-center justify-center
+               rounded-lg border border-[#FFDF9F4D]
+               bg-[#795905]
+               px-10 py-4
+               font-inter text-[14px] font-semibold
+               leading-4 tracking-[0.7px] text-white
+               transition duration-300
+               hover:bg-[#8b6a0b]"
+      >
+        Explore The Collection
+      </a>
+
+    </div>
+  </div>
+
+<!-- Decorative Element -->
+<div
+  class="absolute bottom-8 right-8 z-10
+         flex h-32 w-32 items-center justify-center
+         rounded-full border border-[#FFDF9F]"
+>
+  <div
+    class="rotate-[45deg]
+           text-center font-inter text-[12px] font-medium
+           uppercase leading-[14px] tracking-[1.2px]
+           text-[#FFDF9F]"
+  >
+    <span>GLOW RITUAL •</span>
+    <br />
+    <span>LIMITED EDITION</span>
+  </div>
+</div>
+</section>
+
+
   </body>
 </html>
