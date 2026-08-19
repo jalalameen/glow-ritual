@@ -1,98 +1,561 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>GLOW RITUAL</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind -->
-    <link href="./src/output.css" rel="stylesheet">
-</head>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
 
-
-<body>
+  <body>
     <!--------------header------------->
-    <header class=" bg-white  sticky top-0  border-b  border-b border-[#eee9e5]  z-50">
-        <div class="container ">
-            <div class="row justify-between ">
-                <!--logo-->
-                <a href="#"
-                    class="font-semibold font-inter whitespace-nowrap shrink-0 tracking-wide text-[48px] text-[#82505B] py-[12px]">GLOW
-                    RITUAL</a>
+    <header class="bg-white sticky top-0 border-b border-[#eee9e5] z-50">
+      <div class="container">
+        <div class="row justify-between">
+          <!--logo-->
+          <a
+            href="#"
+            class="font-semibold font-playfair whitespace-nowrap shrink-0 tracking-wide text-[48px] text-[#82505B] py-[12px]"
+            >GLOW RITUAL</a
+          >
 
-                <nav class=" 
-                       py-[29px]
-                       hidden
-                       lg:flex
-                        items-center
-                        gap-5
-                        font-inter
-                        font-semibold
-                        text-nav
-                        leading-4
-                        text-[14px]">
-                    <a href="#" class="nav-link">Skincare</a>
-                    <a href="#" class="nav-link">Cosmetics</a>
-                    <a href="#" class="nav-link">Perfumes</a>
-                    <a href="#" class="text-[#82505b] border-b border-[#82505b] pd-1">New Arivales</a>
-                    <a href="#" class="nav-link">Best sellers</a>
-                    <a href="#" class="nav-link">Rituals</a>
-                </nav>
-                <!--------icons--------->
-                <div class="flex items-center gap-4 xl:gap-6 text-[#82505b] shrink0">
-                    <button class="icon-btn hidden sm:block">
-                        <img src="./assets/img/icons/searche.svg" alt="this is image the icon searche">
-                    </button>
-                    <button class="icon-btn hidden sm:block">
-                        <img src="./assets/img/icons/hearticoons.svg" alt="this is hert icon">
-                    </button>
-                    <button class="icon-btn hidden sm:block">
-                        <img src="./assets/img/icons/personal.svg" alt="this is the icons prsonal">
-                    </button>
-                    <button class="icon-btn hidden sm:block">
-                        <img src="./assets/img/icons/Shopping-Cart.svg" alt="this is the icon Shopping cart">
-                    </button>
-                    <!-------------mobile menu------------------->
-                    <button class="icon-bt text-secondery lg:hidden text-lg" >
-                        <img src="./assets/img/icons/mun.svg" alt="this is mune icons">
-                    </button>
-                </div>
-            </div>
+          <nav
+            class="py-[29px] hidden lg:flex items-center gap-5 font-inter font-semibold text-nav leading-4 text-[14px]"
+          >
+            <a href="#" class="nav-link">Skincare</a>
+            <a href="#" class="nav-link">Cosmetics</a>
+            <a href="#" class="nav-link">Perfumes</a>
+            <a href="#" class="text-[#82505b] border-b border-[#82505b] pd-1"
+              >New Arivales</a
+            >
+            <a href="#" class="nav-link">Best sellers</a>
+            <a href="#" class="nav-link">Rituals</a>
+          </nav>
+          <!--------icons--------->
+          <div class="flex items-center gap-4 xl:gap-6 text-[#82505b] shrink0">
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/searche.svg"
+                alt="this is image the icon searche"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/hearticoons.svg"
+                alt="this is hert icon"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/personal.svg"
+                alt="this is the icons prsonal"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/Shopping-Cart.svg"
+                alt="this is the icon Shopping cart"
+              />
+            </button>
+            <!-------------mobile menu------------------->
+            <button class="icon-bt text-secondery lg:hidden text-lg">
+              <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+            </button>
+          </div>
         </div>
+      </div>
     </header>
     <!----------hero section----------->
-    <section class=" relative min-h-150 overflow-hidden ">
-
-        <!-- desktop image-->
-         <img src="./assets/img/herosiction.jfif" alt="this is background imge" class="hero-image hidden lg:block">
-         <!--mobile image-->
-         <img src="./assets/img/hero-section-mobile.svg" alt="this is background mobile image" class="hero-image block lg:hidden">
-         <!--hero content-->
-         <div class=" container relative z-10 max-auto w-full max-w-7xl flex py-[305.5px] items-center justify-start px-[37.5px] ">
-            <!--hero text-->
-            <div class=" max-w-2xl  w-full text-start">
-                <!--small heading-->
-                <p class="pb-4 font-inter font-semibold leading-4  tracking-[2.8px] uppercase text-[#795905]">LUMINOUS ESSENTIALS</p>
-                <!--main header-->
-                <h1 class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery  sm:text-5xl md:text-[64px]">Radiance Redefined</h1>
-                <!--paragraph-->
-                <p class="font-inter text-[18px] leading-7 text-primary">Experience the intersection of advanced skin <br>
-science and high-end sensory rituals. Your path to <br>
-eternal glow starts here.</p>
-
-            </div>
-         </div>
+    <section class="relative min-h-150 overflow-hidden">
+      <!-- desktop image-->
+      <img
+        src="./assets/img/herosiction.jfif"
+        alt="this is background imge"
+        class="hero-image hidden lg:block"
+      />
+      <!--mobile image-->
+      <img
+        src="./assets/img/hero-section-mobile.svg"
+        alt="this is background mobile image"
+        class="hero-image block lg:hidden"
+      />
+      <!--hero content-->
+      <div
+        class="container relative z-10 flex py-[305.5px] items-center justify-start"
+      >
+        <!--hero text-->
+        <div class="max-w-2xl w-full text-start">
+          <!--small heading-->
+          <p
+            class="pb-4 font-inter font-semibold leading-4 tracking-[2.8px] uppercase text-[#795905]"
+          >
+            LUMINOUS ESSENTIALS
+          </p>
+          <!--main header-->
+          <h1
+            class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery sm:text-5xl md:text-[64px]"
+          >
+            Radiance Redefined
+          </h1>
+          <!--paragraph-->
+          <p class="font-inter text-[18px] leading-7 text-primary">
+            Experience the intersection of advanced skin
+            <br />
+            science and high-end sensory rituals. Your path to <br />
+            eternal glow starts here.
+          </p>
+        </div>
+      </div>
     </section>
-</body>
+    <section class="w-full">
+      <!------------title section---------------->
+      <div class="container py-20 hidden md:block">
+        <div class="flex items-end justify-between">
+          <div class="font-playfair text-[32px] font-semibold leading-10">
+            <h2>Curated Collections</h2>
+            <img
+              src="./assets/img/section3/Background.svg"
+              alt="background line"
+            />
+          </div>
+          <a
+            href=""
+            class="pt-9 pb-0 font-inter font-semibold text-[14px] leading-4 tracking-[0.7px] text-[#82505B] transition hover:opacity-70"
+            >Browse All</a
+          >
+        </div>
+      </div>
 
+      <!---------------Mobile: circular category cards--------------------------->
+      <div class="container pt-12 md:hidden">
+        <h3
+          class="font-playfair text-[24px] font-medium not-italic leading-8 tracking-normal text-center align-middle pb-6"
+        >
+          Shop by Category
+        </h3>
+
+        <!-- Scrollable row -->
+        <div
+          class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8 pb-2 [-ms-overflow-style:none] [scrollbar-none] [&::-webkit-scrollbar]:hidden"
+        >
+          <a
+            href="#cat-1"
+            id="cat-1"
+            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+          >
+            <span
+              class="block h-20 w-20 rotate-0 rounded-full border-2 border-solid border-[#F0EDED] p-1 opacity-100"
+            >
+              <img
+                src="./assets/img/section3/Face-Soap.jpg"
+                alt="this is face-soap"
+                class="h-full w-full rounded-full object-cover"
+              />
+            </span>
+            <span
+              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
+              >SKINCARE</span
+            >
+          </a>
+
+          <a
+            href="#cat-2"
+            id="cat-2"
+            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+          >
+            <span
+              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
+            >
+              <img
+                src="./assets/img/section3/Face-Wash-Gel.jpg"
+                alt="this is face-wash-gel"
+                class="h-full w-full rounded-full object-cover"
+              />
+            </span>
+            <span
+              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
+              >COSMETICS</span
+            >
+          </a>
+
+          <a
+            href="#cat-3"
+            id="cat-3"
+            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+          >
+            <span
+              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
+            >
+              <img
+                src="./assets/img/section3/Hair Mask2.jpg"
+                alt="this is hair"
+                class="h-full w-full rounded-full object-cover"
+              />
+            </span>
+            <span
+              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
+              >PERFUMES</span
+            >
+          </a>
+
+          <a
+            href="#cat-4"
+            id="cat-4"
+            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+          >
+            <span
+              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
+            >
+              <img
+                src="./assets/img/section3/Hair-Mask.jpg"
+                alt="this is hair mask"
+                class="h-full w-full rounded-full object-cover"
+              />
+            </span>
+            <span
+              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
+              >HEALTH</span
+            >
+          </a>
+
+          <a
+            href="#cat-5"
+            id="cat-5"
+            class="flex shrink-0 snap-start scroll-ml-8 flex-col items-center gap-2"
+          >
+            <span
+              class="block h-20 w-20 rotate-0 rounded-full border border-solid border-[#F0EDED] p-1 opacity-100"
+            >
+              <img
+                src="./assets/img/section3/Shampoo.jpg"
+                alt="this is hair shampoo"
+                class="h-full w-full rounded-full object-cover"
+              />
+            </span>
+            <span
+              class="font-inter text-[12px] font-medium not-italic leading-3.5 tracking-[0.36px] align-middle uppercase"
+              >CELLULITE CARE</span
+            >
+          </a>
+        </div>
+
+        <!-- Dots navigation (بدون JS) -->
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <a
+            href="#cat-1"
+            aria-label="Go to Skincare"
+            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+          ></a>
+          <a
+            href="#cat-2"
+            aria-label="Go to Cosmetics"
+            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+          ></a>
+          <a
+            href="#cat-3"
+            aria-label="Go to Perfumes"
+            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+          ></a>
+          <a
+            href="#cat-4"
+            aria-label="Go to Health"
+            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+          ></a>
+          <a
+            href="#cat-5"
+            aria-label="Go to Cellulite Care"
+            class="h-2 w-2 rounded-full bg-[#82505B]/30 hover:bg-[#82505B]"
+          ></a>
+        </div>
+      </div>
+
+      <!---------------Desktop/Tablet: rectangular collection cards--------------------------->
+      <div
+        class="container hidden grid-cols-2 gap-4 md:grid md:grid-cols-3 md:gap-6 lg:grid-cols-5"
+      >
+        <a
+          href="#"
+          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+        >
+          <img
+            src="./assets/img/section3/Face-Soap.jpg"
+            alt="this is face-soap"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+          <span
+            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
+            >SKINCARE</span
+          >
+        </a>
+
+        <a
+          href="#"
+          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+        >
+          <img
+            src="./assets/img/section3/Face-Wash-Gel.jpg"
+            alt="this is face-wash-gel"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+          <span
+            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
+            >COSMETICS</span
+          >
+        </a>
+
+        <a
+          href="#"
+          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+        >
+          <img
+            src="./assets/img/section3/Hair Mask2.jpg"
+            alt="this is hair"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+          <span
+            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
+            >PERFUMES</span
+          >
+        </a>
+
+        <a
+          href="#"
+          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+        >
+          <img
+            src="./assets/img/section3/Hair-Mask.jpg"
+            alt="this is hair mask"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+          <span
+            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
+            >HEALTH</span
+          >
+        </a>
+
+        <a
+          href="#"
+          class="relative block aspect-3/4 overflow-hidden rounded-lg"
+        >
+          <img
+            src="./assets/img/section3/Shampoo.jpg"
+            alt="this is hair shampoo"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+          ></div>
+          <span
+            class="absolute bottom-4 left-4 font-inter text-[14px] font-semibold leading-4 tracking-[1.4px] uppercase text-white"
+            >CELLULITE CARE</span
+          >
+        </a>
+      </div>
+    </section>
+
+    <!--the section is besst saller-->
+    <section class="bg-[#F6F3F2] py-20 mt-20">
+      <div class="mx-auto max-w-6xl">
+        <!-- Section Header -->
+        <div class="flex h-10 items-center justify-between">
+          <!-- Title -->
+          <h2
+            class="font-['Playfair_Display'] text-[32px] font-semibold leading-10 text-secondery"
+          >
+            The Best Sellers
+          </h2>
+
+          <!-- Slider Arrows -->
+          <div class="flex items-center gap-2">
+            <button
+              class="flex h-10 w-10 items-center justify-center"
+              aria-label="Previous products"
+            >
+              ←
+            </button>
+
+            <button
+              class="flex h-10 w-10 items-center justify-center"
+              aria-label="Next products"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div class="mt-8 flex gap-6 overflow-hidden">
+          <!-- Product Card 1 -->
+          <article class="w-[320px] shrink-0">
+            <div class="relative h-100 w-[320px] overflow-hidden">
+              <img
+                src="./assets/img/section3/Face-Soap.jpg"
+                alt="Product 1"
+                class="h-full w-full object-cover"
+              />
+
+              <!-- Heart -->
+              <button
+                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                aria-label="Add to wishlist"
+              >
+                ♡
+              </button>
+
+              <!-- Overlay -->
+              <span
+                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
+              >
+                Bestseller
+              </span>
+            </div>
+
+            <h3
+              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
+            >
+              Product Name
+            </h3>
+
+            <p
+              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
+            >
+              $49.00
+            </p>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="w-[320px] shrink-0">
+            <div class="relative h-100 w-[320px] overflow-hidden">
+              <img
+                src="./assets/img/section3/Face-Wash-Gel.jpg"
+                alt="Product 2"
+                class="h-full w-full object-cover"
+              />
+
+              <button
+                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                aria-label="Add to wishlist"
+              >
+                ♡
+              </button>
+
+              <span
+                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
+              >
+                Bestseller
+              </span>
+            </div>
+
+            <h3
+              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
+            >
+              Product Name
+            </h3>
+
+            <p
+              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
+            >
+              $49.00
+            </p>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="w-[320px] shrink-0">
+            <div class="relative h-100 w-[320px] overflow-hidden">
+              <img
+                src="./assets/img/section3/Hair Mask2.jpg"
+                alt="Product 3"
+                class="h-full w-full object-cover"
+              />
+
+              <button
+                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                aria-label="Add to wishlist"
+              >
+                ♡
+              </button>
+
+              <span
+                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
+              >
+                Bestseller
+              </span>
+            </div>
+
+            <h3
+              class="mt-4 font-playfair text-[24px] font-medium leading-8 text-secondery"
+            >
+              Product Name
+            </h3>
+
+            <p
+              class="mt-1 font-inter text-[16px] font-normal leading-6 text-secondery"
+            >
+              $49.00
+            </p>
+          </article>
+
+          <!-- Product Card 4 -->
+          <article class="w-[320px] shrink-0">
+            <div class="relative h-100 w-[320px] overflow-hidden">
+              <img
+                src="./assets/img/section3/Hair-Mask.jpg"
+                alt="Product 4"
+                class="h-full w-full object-cover"
+              />
+
+              <button
+                class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center"
+                aria-label="Add to wishlist"
+              >
+                ♡
+              </button>
+
+              <span
+                class="absolute bottom-4 left-4 rounded-full bg-[#6A5C4E1A] px-2 py-0.5 text-xs leading-3.5"
+              >
+                Bestseller
+              </span>
+            </div>
+
+            <h3
+              class="mt-4 font-['Playfair_Display'] text-[24px] font-medium leading-8 text-secondery"
+            >
+              Product Name
+            </h3>
+
+            <p
+              class="mt-1 font-['Inter'] text-[16px] font-normal leading-6 text-secondery"
+            >
+              $49.00
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

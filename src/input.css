@@ -96,3 +96,6 @@
 
     @apply absolute inset-0 h-full w-full object-cover;
 }
+@utility card-section-3 {
+    
+}
