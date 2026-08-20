@@ -298,3 +298,38 @@
 
     @apply flex h-10 w-10 items-center justify-center;
 }
+
+/* ========================================
+   REVIEWS
+======================================== */
+
+/* Review Card */
+
+@utility review-card {
+
+    @apply flex min-h-[321.83px] flex-col gap-6 rounded-xl border border-[#E4E2E1] p-10;
+}
+
+
+/* Review Text */
+
+@utility review-text {
+
+    @apply font-inter text-[16px] font-normal italic leading-6 text-secondery;
+}
+
+
+/* Reviewer Name */
+
+@utility review-name {
+
+    @apply font-inter text-[14px] font-semibold leading-4 tracking-[0.7px] text-secondery;
+}
+
+
+/* Reviewer Location */
+
+@utility review-location {
+
+    @apply font-inter text-[12px] font-medium leading-[14px] tracking-[0.36px] text-primary;
+}
