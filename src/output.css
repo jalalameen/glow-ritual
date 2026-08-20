@@ -362,6 +362,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-7 {
     margin-top: calc(var(--spacing) * 7);
   }
@@ -488,6 +491,9 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -505,9 +511,6 @@
   }
   .min-h-150 {
     min-height: calc(var(--spacing) * 150);
-  }
-  .min-h-\[321\.83px\] {
-    min-height: 321.83px;
   }
   .product-card {
     width: 320px;
@@ -531,14 +534,23 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .max-w-\[492px\] {
+    max-width: 492px;
+  }
   .max-w-\[576px\] {
     max-width: 576px;
+  }
+  .max-w-\[635px\] {
+    max-width: 635px;
+  }
+  .max-w-\[672px\] {
+    max-width: 672px;
   }
   .max-w-\[1152px\] {
     max-width: 1152px;
   }
-  .max-w-\[1280px\] {
-    max-width: 1280px;
+  .flex-1 {
+    flex: 1;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -621,8 +633,47 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-\[16\] {
+    gap: 16;
+  }
+  .gap-\[16px\] {
+    gap: 16px;
+  }
+  .gap-y-\[1\] {
+    row-gap: 1;
+  }
+  .gap-y-\[16px\] {
+    row-gap: 16px;
+  }
+  .newsletter-section {
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    background-color: #EAE8E7;
+    padding-block: calc(var(--spacing) * 24);
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .newsletter-button {
+    border-radius: var(--radius-lg);
+    background-color: #82505B;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    --tw-leading: calc(var(--spacing) * 4);
+    line-height: calc(var(--spacing) * 4);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    --tw-tracking: 0.7px;
+    letter-spacing: 0.7px;
+    color: var(--color-white);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -633,12 +684,13 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
   }
   .nav-active {
     border-bottom-style: var(--tw-border-style);
@@ -650,9 +702,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-\[\#E4E2E1\] {
-    border-color: #E4E2E1;
   }
   .border-\[\#FFDF9F4D\] {
     border-color: #FFDF9F4D;
@@ -692,9 +741,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -766,6 +812,17 @@
   .text-start {
     text-align: start;
   }
+  .newsletter-note {
+    font-family: var(--font-inter);
+    font-size: 12px;
+    --tw-leading: 14px;
+    line-height: 14px;
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    --tw-tracking: 0.36px;
+    letter-spacing: 0.36px;
+    color: var(--color-primary);
+  }
   .review-location {
     font-family: var(--font-inter);
     font-size: 12px;
@@ -824,6 +881,24 @@
         color: #82505B;
       }
     }
+  }
+  .newsletter-description {
+    font-family: var(--font-inter);
+    font-size: 18px;
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-primary);
+  }
+  .newsletter-title {
+    font-family: var(--font-playfair);
+    font-size: 32px;
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondery);
   }
   .font-inter {
     font-family: var(--font-inter);
@@ -884,6 +959,10 @@
     --tw-leading: 48px;
     line-height: 48px;
   }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
@@ -912,10 +991,6 @@
     --tw-tracking: 0.7px;
     letter-spacing: 0.7px;
   }
-  .tracking-\[0\.36px\] {
-    --tw-tracking: 0.36px;
-    letter-spacing: 0.36px;
-  }
   .tracking-\[1\.2px\] {
     --tw-tracking: 1.2px;
     letter-spacing: 1.2px;
@@ -927,17 +1002,14 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
-  .text-\[\#1B1C1C\] {
-    color: #1B1C1C;
+  .text-\[\#6B7280\] {
+    color: #6B7280;
   }
   .text-\[\#82505B\] {
     color: #82505B;
   }
   .text-\[\#82505b\] {
     color: #82505b;
-  }
-  .text-\[\#514345\] {
-    color: #514345;
   }
   .text-\[\#795905\] {
     color: #795905;
@@ -963,9 +1035,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .italic {
-    font-style: italic;
-  }
   .underline {
     text-decoration-line: underline;
   }
@@ -985,10 +1054,24 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .placeholder\:text-\[\#6B7280\]::placeholder {
+    color: #6B7280;
+  }
   @media (hover: hover) {
     .hover\:bg-\[\#8b6a0b\]:hover {
       background-color: #8b6a0b;
     }
+  }
+  .focus\:ring-2:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .focus\:ring-\[\#82505B\]\/30:focus {
+    --tw-ring-color: color-mix(in oklab, #82505B 30%, transparent);
   }
   @media (width >= 40rem) {
     .sm\:mt-6 {
@@ -1215,6 +1298,71 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1242,6 +1390,20 @@
       --tw-skew-y: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
     }
   }
 }

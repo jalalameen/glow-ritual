@@ -333,3 +333,46 @@
 
     @apply font-inter text-[12px] font-medium leading-[14px] tracking-[0.36px] text-primary;
 }
+
+/* ========================================
+   NEWSLETTER
+======================================== */
+
+/* Newsletter Section */
+
+@utility newsletter-section {
+
+    @apply overflow-hidden rounded-2xl bg-[#EAE8E7] py-24;
+}
+
+
+/* Newsletter Title */
+
+@utility newsletter-title {
+
+    @apply font-playfair text-[32px] font-semibold leading-10 text-secondery;
+}
+
+
+/* Newsletter Description */
+
+@utility newsletter-description {
+
+    @apply font-inter text-[18px] font-normal leading-7 text-primary;
+}
+
+
+/* Newsletter Button */
+
+@utility newsletter-button {
+
+    @apply rounded-lg bg-[#82505B] font-inter text-[14px] font-semibold leading-4 tracking-[0.7px] text-white transition hover:opacity-90;
+}
+
+
+/* Newsletter Note */
+
+@utility newsletter-note {
+
+    @apply font-inter text-[12px] font-medium leading-[14px] tracking-[0.36px] text-primary;
+}
