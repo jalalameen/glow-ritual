@@ -376,3 +376,41 @@
 
     @apply font-inter text-[12px] font-medium leading-[14px] tracking-[0.36px] text-primary;
 }
+
+/* ========================================
+   FOOTER
+======================================== */
+
+/* Footer Link List */
+
+@utility footer-links {
+
+    @apply flex flex-col gap-3;
+}
+
+
+/* Footer Link */
+
+@utility footer-link {
+
+    @apply font-inter text-[16px] font-normal leading-6
+           text-primary transition hover:text-[#82505B];
+}
+
+
+/* Footer Heading */
+
+@utility footer-heading {
+
+    @apply font-inter text-[14px] font-bold leading-4
+           tracking-[0.7px] text-secondery;
+}
+
+
+/* Footer Social Link */
+
+@utility footer-social-link {
+
+    @apply flex h-4 w-4 items-center justify-center
+           text-primary transition hover:scale-110;
+}
