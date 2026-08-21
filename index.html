@@ -1,1003 +1,768 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>GLOW RITUAL</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>GLOW RITUAL</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
-    <!-- Tailwind -->
-    <link href="./src/output.css" rel="stylesheet" />
-  </head>
-  
-  <body>
-    <!-------------- HEADER ------------->
-    <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
-      <div class="container">
-        <div class="row justify-between">
-          <!-- Logo -->
-          <a href="#"class="shrink-0 whitespace-nowrap py-[12px] font-playfair text-[48px] font-semibold tracking-wide text-[#82505B]">
-            GLOW RITUAL
-          </a>
-          <!-- Navigation -->
-          <nav
-            class="hidden items-center gap-5 py-7.25 font-inter text-[14px] font-semibold leading-4 text-nav lg:flex">
-            <a href="#" class="nav-link"> Skincare </a>
-            <a href="#" class="nav-link"> Cosmetics </a>
-            <a href="#" class="nav-link"> Perfumes </a>
-            <a href="#" class="nav-active"> New Arivales </a>
-            <a href="#" class="nav-link"> Best sellers </a>
-            <a href="#" class="nav-link"> Rituals </a>
-          </nav>
-          <!-------- Icons --------->
-          <div class="flex shrink-0 items-center gap-4 text-[#82505b] xl:gap-6">
-            <button class="icon-btn hidden sm:block">
-              <img src="./assets/img/icons/searche.svg" alt="this is image the icon searche"/>
-            </button>
-            <button class="icon-btn hidden sm:block">
-              <img src="./assets/img/icons/hearticoons.svg" alt="this is hert icon"/>
-            </button>
-            <button class="icon-btn hidden sm:block">
-              <img src="./assets/img/icons/personal.svg" alt="this is the icons prsonal"/>
-            </button>
-            <button class="icon-btn hidden sm:block">
-              <img src="./assets/img/icons/Shopping-Cart.svg" alt="this is the icon Shopping cart"/>
-            </button>
-            <!------------- Mobile Menu ------------------->
-            <button class="icon-bt text-secondery text-lg lg:hidden">
-              <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!---------- HERO SECTION ----------->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind -->
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
 
-    <section class="relative min-h-150 overflow-hidden">
-      <!-- Desktop Image -->
-
-      <img
-        src="./assets/img/herosiction.jfif"
-        alt="this is background imge"
-        class="hero-image hidden lg:block"
-      />
-
-      <!-- Mobile Image -->
-
-      <img
-        src="./assets/img/hero-section-mobile.svg"
-        alt="this is background mobile image"
-        class="hero-image block lg:hidden"
-      />
-
-      <!-- Hero Content -->
-
-      <div class="container hero-content">
-        <!-- Hero Text -->
-
-        <div class="w-full max-w-2xl text-start">
-          <!-- Small Heading -->
-
-          <p class="hero-eyebrow">LUMINOUS ESSENTIALS</p>
-
-          <!-- Main Heading -->
-
-          <h1
-            class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery sm:text-5xl md:text-[64px]"
-          >
-            Radiance Redefined
-          </h1>
-
-          <!-- Paragraph -->
-
-          <p class="font-inter text-[18px] leading-7 text-primary">
-            Experience the intersection of advanced skin
-            <br />
-
-            science and high-end sensory rituals. Your path to
-            <br />
-
-            eternal glow starts here.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!------------- SECTION - CATEGORY GRID -------------------->
-
-    <section class="w-full">
-      <!------------ Desktop Title Section ---------------->
-
-      <div class="container hidden py-20 md:block">
-        <div class="collection-header">
-          <!-- Title -->
-
-          <div class="font-playfair text-[32px] font-semibold leading-10">
-            <h2>Curated Collections</h2>
-
-            <img
-              src="./assets/img/section3/Background.svg"
-              alt="background line"
-            />
-          </div>
-
-          <!-- Browse All -->
-
-          <a href="" class="browse-link"> Browse All </a>
-        </div>
-      </div>
-
-      <!--------------- Mobile Category Cards --------------------------->
-
-      <div class="container pt-12 md:hidden">
-        <!-- Mobile Title -->
-
-        <h3 class="category-heading">Shop by Category</h3>
-
-        <!-- Scrollable Row -->
-
-        <div class="categories-row">
-          <!-- Category 1 -->
-
-          <a href="#cat-1" id="cat-1" class="category-item">
-            <span class="category-circle">
-              <img
-                src="./assets/img/section3/Face-Soap.jpg"
-                alt="this is face-soap"
-                class="category-image"
-              />
-            </span>
-
-            <span class="category-name"> SKINCARE </span>
-          </a>
-
-          <!-- Category 2 -->
-
-          <a href="#cat-2" id="cat-2" class="category-item">
-            <span class="category-circle">
-              <img
-                src="./assets/img/section3/Face-Wash-Gel.jpg"
-                alt="this is face-wash-gel"
-                class="category-image"
-              />
-            </span>
-
-            <span class="category-name"> COSMETICS </span>
-          </a>
-
-          <!-- Category 3 -->
-
-          <a href="#cat-3" id="cat-3" class="category-item">
-            <span class="category-circle">
-              <img
-                src="./assets/img/section3/Hair Mask2.jpg"
-                alt="this is hair"
-                class="category-image"
-              />
-            </span>
-
-            <span class="category-name"> PERFUMES </span>
-          </a>
-
-          <!-- Category 4 -->
-
-          <a href="#cat-4" id="cat-4" class="category-item">
-            <span class="category-circle">
-              <img
-                src="./assets/img/section3/Hair-Mask.jpg"
-                alt="this is hair mask"
-                class="category-image"
-              />
-            </span>
-
-            <span class="category-name"> HEALTH </span>
-          </a>
-
-          <!-- Category 5 -->
-
-          <a href="#cat-5" id="cat-5" class="category-item">
-            <span class="category-circle">
-              <img
-                src="./assets/img/section3/Shampoo.jpg"
-                alt="this is hair shampoo"
-                class="category-image"
-              />
-            </span>
-
-            <span class="category-name"> CELLULITE CARE </span>
-          </a>
-        </div>
-
-        <!-- Dots Navigation -->
-
-        <div class="mt-4 flex items-center justify-center gap-2">
-          <a href="#cat-1" aria-label="Go to Skincare" class="category-dot"></a>
-
-          <a
-            href="#cat-2"
-            aria-label="Go to Cosmetics"
-            class="category-dot"
-          ></a>
-
-          <a href="#cat-3" aria-label="Go to Perfumes" class="category-dot"></a>
-
-          <a href="#cat-4" aria-label="Go to Health" class="category-dot"></a>
-
-          <a
-            href="#cat-5"
-            aria-label="Go to Cellulite Care"
-            class="category-dot"
-          ></a>
-        </div>
-      </div>
-
-      <!--------------- Desktop / Tablet Collection Cards --------------------------->
-
-      <div
-        class="container hidden grid-cols-2 gap-4 md:grid md:grid-cols-3 md:gap-6 lg:grid-cols-5"
-      >
-        <!-- Collection 1 -->
-
-        <a href="#" class="collection-card">
-          <img
-            src="./assets/img/section3/Face-Soap.jpg"
-            alt="this is face-soap"
-            class="collection-image"
-          />
-
-          <div class="collection-overlay"></div>
-
-          <span class="collection-title"> SKINCARE </span>
+<body>
+  <!-------------- HEADER ------------->
+  <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
+    <div class="container">
+      <div class="row justify-between">
+        <!-- Logo -->
+        <a href="#"
+          class="shrink-0 whitespace-nowrap py-[12px] font-playfair text-[48px] font-semibold tracking-wide text-[#82505B]">
+          GLOW RITUAL
         </a>
-
-        <!-- Collection 2 -->
-
-        <a href="#" class="collection-card">
-          <img
-            src="./assets/img/section3/Face-Wash-Gel.jpg"
-            alt="this is face-wash-gel"
-            class="collection-image"
-          />
-
-          <div class="collection-overlay"></div>
-
-          <span class="collection-title"> COSMETICS </span>
-        </a>
-
-        <!-- Collection 3 -->
-
-        <a href="#" class="collection-card">
-          <img
-            src="./assets/img/section3/Hair Mask2.jpg"
-            alt="this is hair"
-            class="collection-image"
-          />
-
-          <div class="collection-overlay"></div>
-
-          <span class="collection-title"> PERFUMES </span>
-        </a>
-
-        <!-- Collection 4 -->
-
-        <a href="#" class="collection-card">
-          <img
-            src="./assets/img/section3/Hair-Mask.jpg"
-            alt="this is hair mask"
-            class="collection-image"
-          />
-
-          <div class="collection-overlay"></div>
-
-          <span class="collection-title"> HEALTH </span>
-        </a>
-
-        <!-- Collection 5 -->
-
-        <a href="#" class="collection-card">
-          <img
-            src="./assets/img/section3/Shampoo.jpg"
-            alt="this is hair shampoo"
-            class="collection-image"
-          />
-
-          <div class="collection-overlay"></div>
-
-          <span class="collection-title"> CELLULITE CARE </span>
-        </a>
-      </div>
-    </section>
-
-    <!------------- BEST SELLERS SECTION -------------------->
-
-    <section class="mt-20 bg-[#F6F3F2] py-20">
-      <div class="mx-auto max-w-6xl">
-        <!-- Section Header -->
-
-        <div class="flex h-10 items-center justify-between">
-          <!-- Title -->
-
-          <h2
-            class="font-playfair text-[32px] font-semibold leading-10 text-secondery"
-          >
-            The Best Sellers
-          </h2>
-
-          <!-- Slider Arrows -->
-
-          <div class="flex items-center gap-2">
-            <button class="slider-arrow" aria-label="Previous products">
-              ←
-            </button>
-
-            <button class="slider-arrow" aria-label="Next products">→</button>
-          </div>
-        </div>
-
-        <!-- Products -->
-
-        <div class="mt-8 flex gap-6 overflow-hidden">
-          <!-- Product Card 1 -->
-
-          <article class="product-card">
-            <div class="product-image-wrapper">
-              <img
-                src="./assets/img/section3/Face-Soap.jpg"
-                alt="Product 1"
-                class="product-image"
-              />
-
-              <!-- Heart -->
-
-              <button class="wishlist-btn" aria-label="Add to wishlist">
-                ♡
-              </button>
-
-              <!-- Badge -->
-
-              <span class="product-badge"> Bestseller </span>
-            </div>
-
-            <h3 class="product-name">Product Name</h3>
-
-            <p class="product-price">$49.00</p>
-          </article>
-
-          <!-- Product Card 2 -->
-
-          <article class="product-card">
-            <div class="product-image-wrapper">
-              <img
-                src="./assets/img/section3/Face-Wash-Gel.jpg"
-                alt="Product 2"
-                class="product-image"
-              />
-
-              <button class="wishlist-btn" aria-label="Add to wishlist">
-                ♡
-              </button>
-
-              <span class="product-badge"> Bestseller </span>
-            </div>
-
-            <h3 class="product-name">Product Name</h3>
-
-            <p class="product-price">$49.00</p>
-          </article>
-
-          <!-- Product Card 3 -->
-
-          <article class="product-card">
-            <div class="product-image-wrapper">
-              <img
-                src="./assets/img/section3/Hair Mask2.jpg"
-                alt="Product 3"
-                class="product-image"
-              />
-
-              <button class="wishlist-btn" aria-label="Add to wishlist">
-                ♡
-              </button>
-
-              <span class="product-badge"> Bestseller </span>
-            </div>
-
-            <h3 class="product-name">Product Name</h3>
-
-            <p class="product-price">$49.00</p>
-          </article>
-
-          <!-- Product Card 4 -->
-
-          <article class="product-card">
-            <div class="product-image-wrapper">
-              <img
-                src="./assets/img/section3/Hair-Mask.jpg"
-                alt="Product 4"
-                class="product-image"
-              />
-
-              <button class="wishlist-btn" aria-label="Add to wishlist">
-                ♡
-              </button>
-
-              <span class="product-badge"> Bestseller </span>
-            </div>
-
-            <h3 class="product-name">Product Name</h3>
-
-            <p class="product-price">$49.00</p>
-          </article>
+        <!-- Navigation -->
+        <nav class="hidden items-center gap-5 py-7.25 font-inter text-[14px] font-semibold leading-4 text-nav lg:flex">
+          <a href="#" class="nav-link"> Skincare </a>
+          <a href="#" class="nav-link"> Cosmetics </a>
+          <a href="#" class="nav-link"> Perfumes </a>
+          <a href="#" class="nav-active"> New Arivales </a>
+          <a href="#" class="nav-link"> Best sellers </a>
+          <a href="#" class="nav-link"> Rituals </a>
+        </nav>
+        <!-------- Icons --------->
+        <div class="flex shrink-0 items-center gap-4 text-[#82505b] xl:gap-6">
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/searche.svg" alt="this is image the icon searche" />
+          </button>
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/hearticoons.svg" alt="this is hert icon" />
+          </button>
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/personal.svg" alt="this is the icons prsonal" />
+          </button>
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/Shopping-Cart.svg" alt="this is the icon Shopping cart" />
+          </button>
+          <!------------- Mobile Menu ------------------->
+          <button class="icon-bt text-secondery text-lg lg:hidden">
+            <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Golden Hour Collection -->
-    <section
-      class="relative mx-auto mt-[84px] h-[500px] max-w-[1152px] overflow-hidden rounded-2xl bg-[#1B1C1Cre]"
-    >
-      <!-- Background Image -->
-      <div class="absolute inset-0 opacity-60">
-        <img
-          src="./assets/img/bg-section-4.jfif"
-          alt="Golden Hour Collection"
-          class="h-full w-full object-cover"
-        />
-      </div>
+  <!---------- HERO SECTION ----------->
 
-      <!-- Dark Overlay -->
-      <div class="absolute inset-0 bg-[#1B1C1C]/30"></div>
+  <section class="relative min-h-150 overflow-hidden">
+    <!-- Desktop Image -->
 
-      <!-- Main Content -->
-      <div
-        class="relative z-10 flex h-full w-full items-center sm:px-10 md:px-12 lg:w-1/2 lg:px-16"
-      >
-        <div class="flex flex-col items-start">
-          <!-- Heading -->
-          <h2
-            class="whitespace-nowrap font-playfair text-[40px] font-bold leading-[48px] tracking-[-0.8px] text-[#FFDF9F] sm:text-[48px] sm:leading-[56px] md:text-[56px] md:leading-[64px] lg:text-[64px] lg:leading-[72px] lg:tracking-[-1.28px]"
-          >
-            The Golden Hour <br />
-            Collection
-          </h2>
+    <img src="./assets/img/herosiction.jfif" alt="this is background imge" class="hero-image hidden lg:block" />
 
-          <!-- Description -->
-          <p
-            class="mt-5 max-w-[576px] font-inter text-[16px] font-normal leading-6 text-[#E4E2E1] sm:mt-6 sm:text-[18px] sm:leading-7"
-          >
-            Capture the ethereal glow of the setting sun. Infused with 24k gold
-            flakes and rare botanical extracts for an unparalleled radiance.
-          </p>
+    <!-- Mobile Image -->
 
-          <!-- Button -->
-          <a
-            href="#"
-            class="mt-7 flex h-[50px] items-center justify-center rounded-lg border border-[#FFDF9F4D] bg-[#795905] px-10 py-4 font-inter text-[14px] font-semibold leading-4 tracking-[0.7px] text-white transition duration-300 hover:bg-[#8b6a0b]"
-          >
-            Explore The Collection
-          </a>
-        </div>
-      </div>
+    <img src="./assets/img/hero-section-mobile.svg" alt="this is background mobile image"
+      class="hero-image block lg:hidden" />
 
-      <!-- Decorative Element -->
-      <div
-        class="absolute bottom-8 right-8 z-10 flex h-32 w-32 items-center justify-center rounded-full border border-[#FFDF9F]"
-      >
-        <div
-          class="rotate-[45deg] text-center font-inter text-[12px] font-medium uppercase leading-[14px] tracking-[1.2px] text-[#FFDF9F]"
-        >
-          <span>GLOW RITUAL •</span>
+    <!-- Hero Content -->
+
+    <div class="container hero-content">
+      <!-- Hero Text -->
+
+      <div class="w-full max-w-2xl text-start">
+        <!-- Small Heading -->
+
+        <p class="hero-eyebrow">LUMINOUS ESSENTIALS</p>
+
+        <!-- Main Heading -->
+
+        <h1
+          class="whitespace-nowrap font-playfair text-4xl font-bold leading-tight text-secondery sm:text-5xl md:text-[64px]">
+          Radiance Redefined
+        </h1>
+
+        <!-- Paragraph -->
+
+        <p class="font-inter text-[18px] leading-7 text-primary">
+          Experience the intersection of advanced skin
           <br />
-          <span>LIMITED EDITION</span>
+
+          science and high-end sensory rituals. Your path to
+          <br />
+
+          eternal glow starts here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!------------- SECTION - CATEGORY GRID -------------------->
+
+  <section class="w-full">
+    <!------------ Desktop Title Section ---------------->
+
+    <div class="container hidden py-20 md:block">
+      <div class="collection-header">
+        <!-- Title -->
+
+        <div class="font-playfair text-[32px] font-semibold leading-10">
+          <h2>Curated Collections</h2>
+
+          <img src="./assets/img/section3/Background.svg" alt="background line" />
+        </div>
+
+        <!-- Browse All -->
+
+        <a href="" class="browse-link"> Browse All </a>
+      </div>
+    </div>
+
+    <!--------------- Mobile Category Cards --------------------------->
+
+    <div class="container pt-12 md:hidden">
+      <!-- Mobile Title -->
+
+      <h3 class="category-heading">Shop by Category</h3>
+
+      <!-- Scrollable Row -->
+
+      <div class="categories-row">
+        <!-- Category 1 -->
+
+        <a href="#cat-1" id="cat-1" class="category-item">
+          <span class="category-circle">
+            <img src="./assets/img/section3/Face-Soap.jpg" alt="this is face-soap" class="category-image" />
+          </span>
+
+          <span class="category-name"> SKINCARE </span>
+        </a>
+
+        <!-- Category 2 -->
+
+        <a href="#cat-2" id="cat-2" class="category-item">
+          <span class="category-circle">
+            <img src="./assets/img/section3/Face-Wash-Gel.jpg" alt="this is face-wash-gel" class="category-image" />
+          </span>
+
+          <span class="category-name"> COSMETICS </span>
+        </a>
+
+        <!-- Category 3 -->
+
+        <a href="#cat-3" id="cat-3" class="category-item">
+          <span class="category-circle">
+            <img src="./assets/img/section3/Hair Mask2.jpg" alt="this is hair" class="category-image" />
+          </span>
+
+          <span class="category-name"> PERFUMES </span>
+        </a>
+
+        <!-- Category 4 -->
+
+        <a href="#cat-4" id="cat-4" class="category-item">
+          <span class="category-circle">
+            <img src="./assets/img/section3/Hair-Mask.jpg" alt="this is hair mask" class="category-image" />
+          </span>
+
+          <span class="category-name"> HEALTH </span>
+        </a>
+
+        <!-- Category 5 -->
+
+        <a href="#cat-5" id="cat-5" class="category-item">
+          <span class="category-circle">
+            <img src="./assets/img/section3/Shampoo.jpg" alt="this is hair shampoo" class="category-image" />
+          </span>
+
+          <span class="category-name"> CELLULITE CARE </span>
+        </a>
+      </div>
+
+      <!-- Dots Navigation -->
+
+      <div class="mt-4 flex items-center justify-center gap-2">
+        <a href="#cat-1" aria-label="Go to Skincare" class="category-dot"></a>
+
+        <a href="#cat-2" aria-label="Go to Cosmetics" class="category-dot"></a>
+
+        <a href="#cat-3" aria-label="Go to Perfumes" class="category-dot"></a>
+
+        <a href="#cat-4" aria-label="Go to Health" class="category-dot"></a>
+
+        <a href="#cat-5" aria-label="Go to Cellulite Care" class="category-dot"></a>
+      </div>
+    </div>
+
+    <!--------------- Desktop / Tablet Collection Cards --------------------------->
+
+    <div class="container hidden grid-cols-2 gap-4 md:grid md:grid-cols-3 md:gap-6 lg:grid-cols-5">
+      <!-- Collection 1 -->
+
+      <a href="#" class="collection-card">
+        <img src="./assets/img/section3/Face-Soap.jpg" alt="this is face-soap" class="collection-image" />
+
+        <div class="collection-overlay"></div>
+
+        <span class="collection-title"> SKINCARE </span>
+      </a>
+
+      <!-- Collection 2 -->
+
+      <a href="#" class="collection-card">
+        <img src="./assets/img/section3/Face-Wash-Gel.jpg" alt="this is face-wash-gel" class="collection-image" />
+
+        <div class="collection-overlay"></div>
+
+        <span class="collection-title"> COSMETICS </span>
+      </a>
+
+      <!-- Collection 3 -->
+
+      <a href="#" class="collection-card">
+        <img src="./assets/img/section3/Hair Mask2.jpg" alt="this is hair" class="collection-image" />
+
+        <div class="collection-overlay"></div>
+
+        <span class="collection-title"> PERFUMES </span>
+      </a>
+
+      <!-- Collection 4 -->
+
+      <a href="#" class="collection-card">
+        <img src="./assets/img/section3/Hair-Mask.jpg" alt="this is hair mask" class="collection-image" />
+
+        <div class="collection-overlay"></div>
+
+        <span class="collection-title"> HEALTH </span>
+      </a>
+
+      <!-- Collection 5 -->
+
+      <a href="#" class="collection-card">
+        <img src="./assets/img/section3/Shampoo.jpg" alt="this is hair shampoo" class="collection-image" />
+
+        <div class="collection-overlay"></div>
+
+        <span class="collection-title"> CELLULITE CARE </span>
+      </a>
+    </div>
+  </section>
+
+  <!------------- BEST SELLERS SECTION -------------------->
+
+  <section class="mt-20 bg-[#F6F3F2] py-20">
+    <div class="mx-auto max-w-6xl">
+      <!-- Section Header -->
+
+      <div class="flex h-10 items-center justify-between">
+        <!-- Title -->
+
+        <h2 class="font-playfair text-[32px] font-semibold leading-10 text-secondery">
+          The Best Sellers
+        </h2>
+
+        <!-- Slider Arrows -->
+
+        <div class="flex items-center gap-2">
+          <button class="slider-arrow" aria-label="Previous products">
+            ←
+          </button>
+
+          <button class="slider-arrow" aria-label="Next products">→</button>
         </div>
       </div>
-    </section>
 
-    <!-- Reviews Section -->
-    <section class="w-full bg-white py-20">
-      <!-- Main Container -->
-      <div class="container">
-        <!-- Reviews Header -->
-        <div class="flex h-[72px] flex-col items-center justify-center gap-2">
-          <!-- Heading -->
-          <h2
-            class="font-playfair text-[32px] font-semibold leading-10 text-secondery"
-          >
-            Voices of Radiance
-          </h2>
+      <!-- Products -->
 
-          <!-- Subtitle -->
-          <p class="font-inter text-[16px] font-normal leading-6 text-primary">
-            Real experiences from our global community.
-          </p>
-        </div>
+      <div class="mt-8 flex gap-6 overflow-hidden">
+        <!-- Product Card 1 -->
 
-        <!-- Reviews Cards -->
-        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Review 1 -->
-          <div class="review-card">
-            <!-- Stars -->
-            <div class="flex items-center gap-1 text-[#795905]">
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="./assets/img/section3/Face-Soap.jpg" alt="Product 1" class="product-image" />
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+            <!-- Heart -->
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              ♡
+            </button>
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 4.58-4.7 4.58
-                 6.49-.94L12 2.5z"
-                />
-              </svg>
+            <!-- Badge -->
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
-            </div>
-
-            <!-- Review Text -->
-            <p class="review-text">
-              "The Golden Hour serum is unlike anything I've ever used. My skin
-              genuinely glows even without makeup. It's now my favorite daily
-              ritual."
-            </p>
-
-            <!-- Reviewer -->
-            <div class="mt-auto flex items-center gap-4">
-              <!-- Avatar -->
-              <div class="h-12 w-12 shrink-0 rounded-full bg-[#E8C9B8]"></div>
-
-              <!-- Name + Location -->
-              <div class="flex flex-col gap-1">
-                <span class="review-name"> Elena V. </span>
-
-                <span class="review-location"> United States </span>
-              </div>
-            </div>
+            <span class="product-badge"> Bestseller </span>
           </div>
 
-          <!-- Review 2 -->
-          <div class="review-card">
-            <!-- Stars -->
-            <div class="flex items-center gap-1 text-[#795905]">
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+          <h3 class="product-name">Product Name</h3>
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+          <p class="product-price">$49.00</p>
+        </article>
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+        <!-- Product Card 2 -->
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="./assets/img/section3/Face-Wash-Gel.jpg" alt="Product 2" class="product-image" />
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
-            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              ♡
+            </button>
 
-            <!-- Review Text -->
-            <p class="review-text">
-              "As someone with sensitive skin, finding luxury products that
-              don't irritate is hard. Glow Ritual is a game changer. Pure,
-              gentle, and effective."
-            </p>
-
-            <!-- Reviewer -->
-            <div class="mt-auto flex items-center gap-4">
-              <div class="h-12 w-12 shrink-0 rounded-full bg-[#D8B7A7]"></div>
-
-              <div class="flex flex-col gap-1">
-                <span class="review-name"> Sophia M. </span>
-
-                <span class="review-location"> United Kingdom </span>
-              </div>
-            </div>
+            <span class="product-badge"> Bestseller </span>
           </div>
 
-          <!-- Review 3 -->
-          <div class="review-card">
-            <!-- Stars -->
-            <div class="flex items-center gap-1 text-[#795905]">
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+          <h3 class="product-name">Product Name</h3>
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+          <p class="product-price">$49.00</p>
+        </article>
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+        <!-- Product Card 3 -->
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="./assets/img/section3/Hair Mask2.jpg" alt="Product 3" class="product-image" />
 
-              <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.9 5.88 6.49.94-4.7 4.58
-                 1.11 6.47L12 17.32l-5.8 3.05
-                 1.11-6.47-4.7-4.58 6.49-.94L12 2.5z"
-                />
-              </svg>
-            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              ♡
+            </button>
 
-            <!-- Review Text -->
-            <p class="review-text">
-              "The packaging alone feels like a gift. The perfumes are
-              sophisticated and last all day. Truly high-end editorial beauty at
-              its best."
-            </p>
-
-            <!-- Reviewer -->
-            <div class="mt-auto flex items-center gap-4">
-              <div class="h-12 w-12 shrink-0 rounded-full bg-[#C9B5A8]"></div>
-
-              <div class="flex flex-col gap-1">
-                <span class="review-name"> Julianne R. </span>
-
-                <span class="review-location"> France </span>
-              </div>
-            </div>
+            <span class="product-badge"> Bestseller </span>
           </div>
-        </div>
+
+          <h3 class="product-name">Product Name</h3>
+
+          <p class="product-price">$49.00</p>
+        </article>
+
+        <!-- Product Card 4 -->
+
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="./assets/img/section3/Hair-Mask.jpg" alt="Product 4" class="product-image" />
+
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              ♡
+            </button>
+
+            <span class="product-badge"> Bestseller </span>
+          </div>
+
+          <h3 class="product-name">Product Name</h3>
+
+          <p class="product-price">$49.00</p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--NEWSLETTER SECTION-->
-    <section class="newsletter-section mx-auto max-w-6xl">
-      <!-- Newsletter Content -->
-      <div
-        class="mx-auto flex max-w-[672px] flex-col items-center text-center gap-y-[16px]"
-      >
+  <!-- Golden Hour Collection -->
+  <section class="relative mx-auto mt-21 h-125 max-w-6xl overflow-hidden rounded-2xl bg-[#1B1C1Cre]">
+    <!-- Background Image -->
+    <div class="absolute inset-0 opacity-60">
+      <img src="./assets/img/bg-section-4.jfif" alt="Golden Hour Collection" class="h-full w-full object-cover" />
+    </div>
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-secondery/30"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex h-full w-full items-center sm:px-10 md:px-12 lg:w-1/2 lg:px-16">
+      <div class="flex flex-col items-start">
         <!-- Heading -->
-        <h2 class="newsletter-title">Join the Inner Circle</h2>
+        <h2
+          class="whitespace-nowrap font-playfair text-[40px] font-bold leading-12 tracking-[-0.8px] text-[#FFDF9F] sm:text-[48px] sm:leading-14 md:text-[56px] md:leading-16 lg:text-[64px] lg:leading-18 lg:tracking-[-1.28px]">
+          The Golden Hour <br />
+          Collection
+        </h2>
 
         <!-- Description -->
-        <p class="newsletter-description mt-4 max-w-[635px]">
-          Subscribe to receive early access to new collections, exclusive
-          rituals, and skincare wisdom directly in your inbox.
+        <p
+          class="mt-5 max-w-xl font-inter text-[16px] font-normal leading-6 text-[#E4E2E1] sm:mt-6 sm:text-[18px] sm:leading-7">
+          Capture the ethereal glow of the setting sun. Infused with 24k gold
+          flakes and rare botanical extracts for an unparalleled radiance.
         </p>
 
-        <!-- Newsletter Form -->
-        <form class="mt-10 flex w-full max-w-[492px] items-center gap-4">
-          <!-- Email Input -->
-          <input
-            type="email"
-            placeholder="Your Email Address"
-            class="h-14 flex-1 rounded-lg border-0 bg-white px-6 font-inter text-[16px] font-normal leading-none text-[#6B7280] outline-none placeholder:text-[#6B7280] focus:ring-2 focus:ring-[#82505B]/30"
-          />
+        <!-- Button -->
+        <a href="#"
+          class="mt-7 flex h-12.5 items-center justify-center rounded-lg border border-[#FFDF9F4D] bg-[#795905] px-10 py-4 font-inter text-[14px] font-semibold leading-4 tracking-[0.7px] text-white transition duration-300 hover:bg-[#8b6a0b]">
+          Explore The Collection
+        </a>
+      </div>
+    </div>
 
-          <!-- Subscribe Button -->
-          <button type="submit" class="newsletter-button h-14 px-10">
-            Subscribe
-          </button>
-        </form>
+    <!-- Decorative Element -->
+    <div
+      class="absolute bottom-8 right-8 z-10 flex h-32 w-32 items-center justify-center rounded-full border border-[#FFDF9F]">
+      <div
+        class="rotate-45 text-center font-inter text-[12px] font-medium uppercase-3.5 tracking-[1.2px] text-[#FFDF9F]">
+        <span>GLOW RITUAL •</span>
+        <br />
+        <span>LIMITED EDITION</span>
+      </div>
+    </div>
+  </section>
 
-        <!-- Privacy Note -->
-        <p class="newsletter-note mt-6">
-          By subscribing, you agree to our Privacy Policy and Terms of Service.
+  <!-- Reviews Section -->
+  <section class="w-full bg-white py-20">
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Reviews Header -->
+      <div class="flex h-18 flex-col items-center justify-center gap-2">
+        <!-- Heading -->
+        <h2 class="font-playfair text-[32px] font-semibold leading-10 text-secondery">
+          Voices of Radiance
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="font-inter text-[16px] font-normal leading-6 text-primary">
+          Real experiences from our global community.
         </p>
       </div>
-    </section>
 
-    <!-- ========================================
+      <!-- Reviews Cards -->
+      <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <!-- Stars -->
+          <div class="icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+
+          </div>
+
+          <!-- Review Text -->
+          <p class="review-text">
+            "The Golden Hour serum is unlike anything I've ever used. My skin
+            genuinely glows even without makeup. It's now my favorite daily
+            ritual."
+          </p>
+
+          <!-- Reviewer -->
+          <div class="reviewer">
+            <!-- Avatar -->
+            <div class="avatar"></div>
+
+            <!-- Name + Location -->
+            <div class="name-location">
+              <span class="review-name"> Elena V. </span>
+
+              <span class="review-location"> United States </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <!-- Stars -->
+          <div class="icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+          </div>
+
+          <!-- Review Text -->
+          <p class="review-text">
+            "As someone with sensitive skin, finding luxury products that
+            don't irritate is hard. Glow Ritual is a game changer. Pure,
+            gentle, and effective."
+          </p>
+
+          <!-- Reviewer -->
+          <div class="reviewer">
+            <div class="avatar"></div>
+
+            <div class="name-location">
+              <span class="review-name"> Sophia M. </span>
+
+              <span class="review-location"> United Kingdom </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <!-- Stars -->
+          <div class="icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+            <img src="./assets/img/icons/Icon-star.svg" alt="Icon-star">
+          </div>
+
+          <!-- Review Text -->
+          <p class="review-text">
+            "The packaging alone feels like a gift. The perfumes are
+            sophisticated and last all day. Truly high-end editorial beauty at
+            its best."
+          </p>
+
+          <!-- Reviewer -->
+          <div class="reviewer">
+            <div class="avatar"></div>
+
+            <div class="name-location">
+              <span class="review-name"> Julianne R. </span>
+
+              <span class="review-location"> France </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--NEWSLETTER SECTION-->
+  <section class="newsletter-section mx-auto max-w-6xl">
+    <!-- Newsletter Content -->
+    <div class="mx-auto flex max-w-2xl flex-col items-center text-center gap-y-4">
+      <!-- Heading -->
+      <h2 class="newsletter-title">Join the Inner Circle</h2>
+
+      <!-- Description -->
+      <p class="newsletter-description mt-4 max-w-158.75">
+        Subscribe to receive early access to new collections, exclusive
+        rituals, and skincare wisdom directly in your inbox.
+      </p>
+
+      <!-- Newsletter Form -->
+      <form class="mt-10 flex w-full max-w-123 items-center gap-4">
+        <!-- Email Input -->
+        <input type="email" placeholder="Your Email Address"
+          class="h-14 flex-1 rounded-lg border-0 bg-white px-6 font-inter text-[16px] font-normal leading-none text-[#6B7280] outline-none placeholder:text-[#6B7280] focus:ring-2 focus:ring-[#82505B]/30" />
+
+        <!-- Subscribe Button -->
+        <button type="submit" class="newsletter-button h-14 px-10">
+          Subscribe
+        </button>
+      </form>
+
+      <!-- Privacy Note -->
+      <p class="newsletter-note mt-6">
+        By subscribing, you agree to our Privacy Policy and Terms of Service.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================
      FOOTER
 ======================================== -->
 
-    <footer
-      class="mt-40.25 border-t border-[#D5C2C4] bg-[#EAE8E7] max-md:hidden"
-    >
-      <div class="container flex flex-col gap-12 py-20">
-        <!-- Footer Columns -->
+  <footer class="mt-40.25 border-t border-[#D5C2C4] bg-[#EAE8E7] max-md:hidden">
+    <div class="container flex flex-col gap-12 py-20">
+      <!-- Footer Columns -->
 
-        <div class="grid grid-cols-4 gap-12">
-          <!-- ================================
+      <div class="grid grid-cols-4 gap-12">
+        <!-- ================================
            BRAND INFO
       ================================= -->
 
-          <div class="flex flex-col gap-4 pb-5.5">
-            <a
-              href="#"
-              class="font-playfair text-[32px] font-semibold leading-10 text-[#82505B]"
-            >
-              GLOW RITUAL
+        <div class="flex flex-col gap-4 pb-5.5">
+          <a href="#" class="font-playfair text-[32px] font-semibold leading-10 text-[#82505B]">
+            GLOW RITUAL
+          </a>
+
+          <p class="font-inter text-[16px] font-normal leading-6 text-primary">
+            Elevating daily routines into sacred self-care rituals. Crafted
+            for the modern, radiant woman.
+          </p>
+
+          <!-- Social Links -->
+
+          <div class="flex items-center gap-4 pt-4">
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <p
-              class="font-inter text-[16px] font-normal leading-6 text-primary"
-            >
-              Elevating daily routines into sacred self-care rituals. Crafted
-              for the modern, radiant woman.
-            </p>
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
 
-            <!-- Social Links -->
-
-            <div class="flex items-center gap-4 pt-4">
-              <a href="#" class="footer-social-link" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-
-              <a href="#" class="footer-social-link" aria-label="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-
-              <a href="#" class="footer-social-link" aria-label="Pinterest">
-                <i class="fa-brands fa-pinterest-p"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ================================
-           DISCOVERY
-      ================================= -->
-
-          <div class="flex flex-col gap-6">
-            <h4 class="footer-heading">DISCOVERY</h4>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link"> Skincare </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Cosmetics </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Perfumes </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> New Arrivals </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Best Sellers </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ================================
-           ASSISTANCE
-      ================================= -->
-
-          <div class="flex flex-col gap-6">
-            <h4 class="footer-heading">ASSISTANCE</h4>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link"> Shipping & Returns </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Contact Support </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Privacy Policy </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Store Locator </a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link"> Sustainability </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ================================
-           OUR ATELIER
-      ================================= -->
-
-          <div class="flex flex-col gap-2 pb-18">
-            <h4 class="footer-heading">OUR ATELIER</h4>
-
-            <p
-              class="pt-2 font-inter text-[16px] font-normal leading-6 text-primary"
-            >
-              124 Avenue des Champs-Élysées
-            </p>
-
-            <p
-              class="font-inter text-[16px] font-normal leading-6 text-primary"
-            >
-              Paris, France
-            </p>
-
-            <a
-              href="mailto:contact@glowritual.com"
-              class="pt-2 font-inter text-[16px] font-normal leading-6 text-primary transition hover:text-[#82505B]"
-            >
-              contact@glowritual.com
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-pinterest-p"></i>
             </a>
           </div>
         </div>
 
         <!-- ================================
+           DISCOVERY
+      ================================= -->
+
+        <div class="flex flex-col gap-6">
+          <h4 class="footer-heading">DISCOVERY</h4>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link"> Skincare </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Cosmetics </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Perfumes </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> New Arrivals </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Best Sellers </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ================================
+           ASSISTANCE
+      ================================= -->
+
+        <div class="flex flex-col gap-6">
+          <h4 class="footer-heading">ASSISTANCE</h4>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link"> Shipping & Returns </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Contact Support </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Store Locator </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Sustainability </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ================================
+           OUR ATELIER
+      ================================= -->
+
+        <div class="flex flex-col gap-2 pb-18">
+          <h4 class="footer-heading">OUR ATELIER</h4>
+
+          <p class="pt-2 footer-paragraph">
+            124 Avenue des Champs-Élysées
+          </p>
+
+          <p class="footer-paragraph">
+            Paris, France
+          </p>
+
+          <a href="#" class="pt-2 footer-paragraph transition hover:text-[#82505B]">
+            contact@glowritual.com
+          </a>
+        </div>
+      </div>
+
+      <!-- ================================
          BOTTOM BAR
     ================================= -->
 
-        <div
-          class="flex items-center justify-between border-t border-[#D5C2C4]/30 py-8"
-        >
-          <p
-            class="font-inter text-[14px] font-normal leading-5 text-primary opacity-70"
-          >
-            © 2025 GLOW RITUAL. All rights reserved.
-          </p>
+      <div class="flex items-center justify-between border-t border-[#D5C2C4]/30 py-8">
+        <p class="fotter-paragraf opacity-70">
+          © 2025 GLOW RITUAL. All rights reserved.
+        </p>
 
-          <div class="flex items-center gap-8 opacity-50">
-            <i class="fa-brands fa-cc-visa"></i>
-
-            <i class="fa-brands fa-cc-mastercard"></i>
-
-            <i class="fa-brands fa-cc-amex"></i>
-          </div>
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- ========================================
+  <!-- ========================================
      MOBILE BOTTOM NAVIGATION
 ======================================== -->
 
-    <nav
-      class="fixed bottom-0 left-0 right-0 z-50 flex h-[73px] border-t border-[#E4E2E1]/50 bg-[#FBF9F8]/90 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] backdrop-blur-[6px] md:hidden"
-    >
-      <div
-        class="flex h-[72px] w-full items-center justify-between px-[16.75px] pb-2"
-      >
-        <!-- HOME -->
+  <nav
+    class="fixed bottom-0 left-0 right-0 z-50 flex h-18.25 border-t border-[#E4E2E1]/50 bg-[#FBF9F8]/90 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] backdrop-blur-[6px] md:hidden">
+    <div class="flex h-18 w-full items-center justify-between px-[16.75px] pb-2">
+      <!-- HOME -->
 
-        <a href="#" class="relative flex w-16 flex-col items-center gap-1">
-          <div
-            class="flex h-[34px] w-12 flex-col items-center rounded-full bg-[#C98F9A]/20 px-4 pb-3 pt-1"
-          >
-            <i class="fa-solid fa-house text-[18px] text-[#82505B]"></i>
-          </div>
+      <a href="#" class=" mobile-a">
+        <div class=" flex items-center justify-center  rounded-full bg-[#C98F9A]/20 ">
+          <i class="imag-buttons">
+            <img src="./assets/img/icons/home.svg" alt="the icon cart">
+          </i>
+        </div>
 
-          <span
-            class="font-inter text-[10px] font-semibold leading-[15px] text-[#82505B]"
-          >
-            Home
-          </span>
-        </a>
+        <span class="text-icons-mobile">
+          Home
+        </span>
+      </a>
 
-        <!-- EXPLORE -->
+      <!-- EXPLORE -->
 
-        <a href="#" class="relative flex w-16 flex-col items-center gap-1">
-          <div
-            class="flex h-[34px] w-12 flex-col items-center rounded-full px-4 pb-3 pt-1"
-          >
-            <i
-              class="fa-solid fa-magnifying-glass text-[18px] text-primary"
-            ></i>
-          </div>
+      <a href="#" class=" mobile-a">
+        <div class="flex items-center justify-center">
+          <i class="imag-buttons"><img src="./assets/img/icons/searche.svg" alt="the icon cart"></i>
+        </div>
 
-          <span
-            class="font-inter text-[10px] font-normal leading-[15px] text-primary"
-          >
-            Explore
-          </span>
-        </a>
+        <span class="text-icons-mobile">
+          serarch
+        </span>
+      </a>
 
-        <!-- CART -->
+      <!-- CART -->
 
-        <a href="#" class="relative flex w-16 flex-col items-center gap-1">
-          <div
-            class="flex h-[34px] w-12 flex-col items-center rounded-full px-4 pb-3 pt-1"
-          >
-            <i class="fa-solid fa-bag-shopping text-[18px] text-primary"></i>
-          </div>
+      <!-- CART -->
 
-          <span
-            class="font-inter text-[10px] font-normal leading-[15px] text-primary"
-          >
-            Cart
-          </span>
+      <a href="#" class="relative mobile-a">
 
-          <!-- Cart Badge -->
+        <div class="flex items-center justify-center">
+          <i class="imag-buttons">
+            <img src="./assets/img/icons/Shopping-Cart.svg" alt="the icon cart">
+          </i>
+        </div>
 
-          <span
-            class="absolute right-2 top-1 flex h-3 w-3 items-center justify-center rounded-full bg-[#82505B] font-inter text-[8px] font-bold leading-3 text-white"
-          >
-            2
-          </span>
-        </a>
+        <span class="text-icons-mobile">
+          Cart
+        </span>
 
-        <!-- PROFILE -->
+        <!-- Cart Badge -->
 
-        <a href="#" class="relative flex w-16 flex-col items-center gap-1">
-          <div
-            class="flex h-[34px] w-12 flex-col items-center rounded-full px-4 pb-3 pt-1"
-          >
-            <i class="fa-regular fa-user text-[18px] text-primary"></i>
-          </div>
+        <span
+          class="absolute right-1 top-0 flex h-3 w-3 items-center justify-center rounded-full bg-[#82505B] font-inter text-[8px] font-bold leading-3 text-white">
+          2
+        </span>
 
-          <span
-            class="font-inter text-[10px] font-normal leading-[15px] text-primary"
-          >
-            Profile
-          </span>
-        </a>
-      </div>
-    </nav>
-  </body>
+      </a>
+
+      <!-- PROFILE -->
+
+      <a href="#" class="mobile-a">
+        <div class="flex items-center justify-center">
+          <i class="imag-buttons">
+            <img src="./assets/img/icons/personal.svg" alt="the icon cart">
+          </i>
+        </div>
+
+        <span class="text-icons-mobile">
+          Profile
+        </span>
+      </a>
+    </div>
+  </nav>
+</body>
+
 </html>

@@ -22,32 +22,15 @@
 
 @utility container {
 
-    @apply w-full max-w-7xl mx-auto px-16;
+    @apply w-full max-w-7xl mx-auto px-16 
+           sm:px-6
+           md:px-8
+           lg:px-12
+           xl:px-16;
 }
 
 
-@media (max-width: 1024px) {
 
-    .container {
-        @apply px-12;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    .container {
-        @apply px-8;
-    }
-}
-
-
-@media (max-width: 640px) {
-
-    .container {
-        @apply px-4;
-    }
-}
 
 
 /* ========================================
@@ -310,12 +293,28 @@
     @apply flex min-h-[321.83px] flex-col gap-6 rounded-xl border border-[#E4E2E1] p-10;
 }
 
+/*icon star*/
+@utility icon-star{
+    @apply flex items-center gap-1 text-[#795905];
+}
 
-/* Review Text */
+
+/*Review Text*/
 
 @utility review-text {
 
     @apply font-inter text-[16px] font-normal italic leading-6 text-secondery;
+}
+
+@utility reviewer {
+   @apply mt-auto flex items-center gap-4;
+}
+@utility avatar {
+    @apply h-12 w-12 shrink-0 rounded-full bg-[#E8C9B8];
+}
+
+@utility name-location{
+    @apply flex flex-col gap-1;
 }
 
 
@@ -406,11 +405,26 @@
            tracking-[0.7px] text-secondery;
 }
 
+/*footer paragraph*/
+@utility footer-paragraph {
+   @apply font-inter text-[16px] font-normal leading-6 text-primary;
+}
 
 /* Footer Social Link */
 
 @utility footer-social-link {
 
-    @apply flex h-4 w-4 items-center justify-center
-           text-primary transition hover:scale-110;
+    @apply flex h-4 w-4 items-center justify-center text-primary transition hover:scale-110;
+}
+@utility mobile-a {
+   @apply relative flex w-16 flex-col items-center gap-1;
+}
+
+@utility imag-buttons {
+
+  @apply flex h-4.5 w-4.5 items-center justify-center;
+}
+
+@utility text-icons-mobile {
+   @apply font-inter text-[10px] font-normal leading-3.75 text-primary;
 }
