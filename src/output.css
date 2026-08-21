@@ -237,6 +237,36 @@
     align-items: center;
     justify-content: center;
   }
+  .listing-product-badge {
+    position: absolute;
+    top: calc(var(--spacing) * 3);
+    left: calc(var(--spacing) * 3);
+    background-color: #82505B;
+    padding-inline: calc(var(--spacing) * 2);
+    padding-block: var(--spacing);
+    font-family: var(--font-inter);
+    font-size: 10px;
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-white);
+  }
+  .listing-add-cart {
+    position: absolute;
+    right: calc(var(--spacing) * 3);
+    bottom: calc(var(--spacing) * 3);
+    left: calc(var(--spacing) * 3);
+    display: none;
+    height: calc(var(--spacing) * 10);
+    background-color: #FBF9F8;
+    font-family: var(--font-inter);
+    font-size: 12px;
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-secondery);
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .product-badge {
     position: absolute;
     bottom: calc(var(--spacing) * 4);
@@ -272,6 +302,13 @@
     align-items: center;
     justify-content: flex-start;
     padding-block: 305.5px;
+  }
+  .listing-product-image-wrapper {
+    position: relative;
+    margin-bottom: calc(var(--spacing) * 4);
+    aspect-ratio: 0.85;
+    overflow: hidden;
+    background-color: #F1ECEA;
   }
   .collection-card {
     position: relative;
@@ -333,6 +370,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-20 {
+    z-index: 20;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -372,11 +412,24 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .listing-product-price-row {
+    margin-top: var(--spacing);
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+  }
   .reviewer {
     margin-top: auto;
     display: flex;
     align-items: center;
     gap: calc(var(--spacing) * 4);
+  }
+  .listing-product-rating {
+    margin-top: calc(var(--spacing) * 2);
+    display: block;
+    font-family: var(--font-inter);
+    font-size: 11px;
+    color: var(--color-nav);
   }
   .product-name {
     margin-top: calc(var(--spacing) * 4);
@@ -398,6 +451,20 @@
     font-weight: var(--font-weight-normal);
     color: var(--color-secondery);
   }
+  .listing-product-description {
+    margin-top: calc(var(--spacing) * 3);
+    font-family: var(--font-inter);
+    font-size: 12px;
+    --tw-leading: calc(var(--spacing) * 4.5);
+    line-height: calc(var(--spacing) * 4.5);
+    color: var(--color-nav);
+  }
+  .listing-product-price {
+    margin-top: var(--spacing);
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: var(--color-secondery);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -416,6 +483,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -424,6 +494,21 @@
   }
   .mt-40\.25 {
     margin-top: calc(var(--spacing) * 40.25);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
   }
   .footer-social-link {
     display: flex;
@@ -565,6 +650,16 @@
     border-radius: calc(infinity * 1px);
     object-fit: cover;
   }
+  .listing-product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
   .product-image {
     height: 100%;
     width: 100%;
@@ -572,6 +667,12 @@
   }
   .h-3 {
     height: calc(var(--spacing) * 3);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-9\.75 {
+    height: calc(var(--spacing) * 9.75);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -594,6 +695,12 @@
   .h-125 {
     height: calc(var(--spacing) * 125);
   }
+  .h-\[5\.55px\] {
+    height: 5.55px;
+  }
+  .h-\[13\.5px\] {
+    height: 13.5px;
+  }
   .h-full {
     height: 100%;
   }
@@ -604,11 +711,23 @@
     width: 320px;
     flex-shrink: 0;
   }
+  .w-2\.25 {
+    width: calc(var(--spacing) * 2.25);
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-55 {
+    width: calc(var(--spacing) * 55);
+  }
+  .w-\[13\.5px\] {
+    width: 13.5px;
   }
   .w-full {
     width: 100%;
@@ -619,6 +738,9 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
   .max-w-123 {
     max-width: calc(var(--spacing) * 123);
   }
@@ -627,6 +749,9 @@
   }
   .max-w-xl {
     max-width: var(--container-xl);
+  }
+  .min-w-0 {
+    min-width: 0px;
   }
   .flex-1 {
     flex: 1;
@@ -691,8 +816,14 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: var(--spacing);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -703,11 +834,20 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
+  }
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
   }
   .newsletter-section {
     overflow: hidden;
@@ -780,6 +920,9 @@
   .border-\[\#E4E2E1\]\/50 {
     border-color: color-mix(in oklab, #E4E2E1 50%, transparent);
   }
+  .border-\[\#EAE8E7\] {
+    border-color: #EAE8E7;
+  }
   .border-\[\#FFDF9F4D\] {
     border-color: #FFDF9F4D;
   }
@@ -807,6 +950,9 @@
   .bg-\[\#F6F3F2\] {
     background-color: #F6F3F2;
   }
+  .bg-\[\#FBF9F8\] {
+    background-color: #FBF9F8;
+  }
   .bg-\[\#FBF9F8\]\/90 {
     background-color: color-mix(in oklab, #FBF9F8 90%, transparent);
   }
@@ -822,6 +968,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -833,6 +982,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-7\.25 {
     padding-block: calc(var(--spacing) * 7.25);
@@ -903,6 +1055,9 @@
   }
   .pb-5\.5 {
     padding-bottom: calc(var(--spacing) * 5.5);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
   }
   .pb-18 {
     padding-bottom: calc(var(--spacing) * 18);
@@ -1020,6 +1175,15 @@
     font-weight: var(--font-weight-normal);
     color: var(--color-primary);
   }
+  .listing-product-name {
+    font-family: var(--font-playfair);
+    font-size: 18px;
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-secondery);
+  }
   .newsletter-description {
     font-family: var(--font-inter);
     font-size: 18px;
@@ -1047,6 +1211,16 @@
     font-weight: var(--font-weight-normal);
     color: var(--color-primary);
   }
+  .listing-product-old-price {
+    font-family: var(--font-inter);
+    font-size: 12px;
+    color: #999;
+  }
+  .listing-product-sale-price {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: var(--color-secondery);
+  }
   .font-inter {
     font-family: var(--font-inter);
   }
@@ -1067,6 +1241,9 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
   .text-\[14px\] {
     font-size: 14px;
   }
@@ -1075,6 +1252,9 @@
   }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
   }
   .text-\[32px\] {
     font-size: 32px;
@@ -1089,9 +1269,17 @@
     --tw-leading: calc(var(--spacing) * 3);
     line-height: calc(var(--spacing) * 3);
   }
+  .leading-3\.5 {
+    --tw-leading: calc(var(--spacing) * 3.5);
+    line-height: calc(var(--spacing) * 3.5);
+  }
   .leading-4 {
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
   }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
@@ -1100,6 +1288,10 @@
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
     line-height: calc(var(--spacing) * 7);
+  }
+  .leading-9 {
+    --tw-leading: calc(var(--spacing) * 9);
+    line-height: calc(var(--spacing) * 9);
   }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
@@ -1141,6 +1333,10 @@
     --tw-tracking: 0.7px;
     letter-spacing: 0.7px;
   }
+  .tracking-\[0\.36px\] {
+    --tw-tracking: 0.36px;
+    letter-spacing: 0.36px;
+  }
   .tracking-\[1\.2px\] {
     --tw-tracking: 1.2px;
     letter-spacing: 1.2px;
@@ -1179,6 +1375,12 @@
   .text-white {
     color: var(--color-white);
   }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .accent-\[\#82505B\] {
+    accent-color: #82505B;
+  }
   .opacity-60 {
     opacity: 60%;
   }
@@ -1206,6 +1408,14 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  @media (hover: hover) {
+    .group-hover\:scale-105:is(:where(.group):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
   }
   .placeholder\:text-\[\#6B7280\]::placeholder {
     color: #6B7280;
@@ -1236,6 +1446,12 @@
     }
     .sm\:block {
       display: block;
+    }
+    .sm\:gap-x-5 {
+      column-gap: calc(var(--spacing) * 5);
+    }
+    .sm\:px-6 {
+      padding-inline: calc(var(--spacing) * 6);
     }
     .sm\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
@@ -1311,6 +1527,18 @@
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
+    .lg\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+    .lg\:gap-x-6 {
+      column-gap: calc(var(--spacing) * 6);
+    }
+    .lg\:gap-y-10 {
+      row-gap: calc(var(--spacing) * 10);
+    }
+    .lg\:px-8 {
+      padding-inline: calc(var(--spacing) * 8);
+    }
     .lg\:px-16 {
       padding-inline: calc(var(--spacing) * 16);
     }
@@ -1374,11 +1602,11 @@
   inherits: false;
   initial-value: 100%;
 }
-@property --tw-leading {
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-font-weight {
+@property --tw-leading {
   syntax: "*";
   inherits: false;
 }
@@ -1410,6 +1638,10 @@
   syntax: "*";
   inherits: false;
   initial-value: proximity;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -1532,10 +1764,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1548,14 +1776,15 @@
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-leading: initial;
       --tw-tracking: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
       --tw-border-style: solid;
       --tw-scroll-snap-strictness: proximity;
+      --tw-duration: initial;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -1584,7 +1813,6 @@
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
-      --tw-duration: initial;
     }
   }
 }

@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GLOW RITUAL</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
+      <div class="container">
+        <div class="row justify-between">
+          <!-- Logo -->
+          <a
+            href="#"
+            class="shrink-0 whitespace-nowrap py-[12px] font-playfair text-[48px] font-semibold tracking-wide text-[#82505B]"
+          >
+            GLOW RITUAL
+          </a>
+          <!-- Navigation -->
+          <nav
+            class="hidden items-center gap-5 py-7.25 font-inter text-[14px] font-semibold leading-4 text-nav lg:flex"
+          >
+            <a href="#" class="nav-link"> Skincare </a>
+            <a href="#" class="nav-link"> Cosmetics </a>
+            <a href="#" class="nav-link"> Perfumes </a>
+            <a href="#" class="nav-active"> New Arivales </a>
+            <a href="#" class="nav-link"> Best sellers </a>
+            <a href="#" class="nav-link"> Rituals </a>
+          </nav>
+          <!-------- Icons --------->
+          <div class="flex shrink-0 items-center gap-4 text-[#82505b] xl:gap-6">
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/searche.svg"
+                alt="this is image the icon searche"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/hearticoons.svg"
+                alt="this is hert icon"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/personal.svg"
+                alt="this is the icons prsonal"
+              />
+            </button>
+            <button class="icon-btn hidden sm:block">
+              <img
+                src="./assets/img/icons/Shopping-Cart.svg"
+                alt="this is the icon Shopping cart"
+              />
+            </button>
+            <!------------- Mobile Menu ------------------->
+            <button class="icon-bt text-secondery text-lg lg:hidden">
+              <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================== PRODUCTS SECTION ========================== -->
+
+    <section class="w-full bg-[#FBF9F8]">
+      <div class="mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
+        <!-- ===================== MOBILE FILTER / SORT BAR ===================== -->
+
+        <div
+          class="sticky top-0 z-20 flex h-9.75 w-full items-center justify-between border-b border-[#EAE8E7] bg-[#FBF9F8] px-5 lg:hidden"
+        >
+          <!-- Filter Button -->
+
+          <button
+            type="button"
+            class="flex items-center gap-1 font-inter text-[12px] font-medium leading-3.5 tracking-[0.36px] text-secondery"
+          >
+            <!-- Filter Icon -->
+
+            <span
+              class="flex h-[13.5px] w-[13.5px] items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13.5"
+                height="13.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M4 6h16" />
+                <path d="M7 12h10" />
+                <path d="M10 18h4" />
+              </svg>
+            </span>
+
+            <span>Filter</span>
+          </button>
+
+          <!-- Sort Button -->
+
+          <button
+            type="button"
+            class="flex items-center gap-1 font-inter text-[12px] font-medium leading-3.5 tracking-[0.36px] text-secondery"
+          >
+            <span>Sort by: Newest Arrivals</span>
+
+            <!-- Arrow -->
+
+            <span class="flex h-[5.55px] w-2.25 items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="6"
+                viewBox="0 0 9 6"
+                fill="none"
+              >
+                <path
+                  d="M1 1L4.5 4.5L8 1"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- ===================== DESKTOP CONTENT ===================== -->
+
+        <div class="flex w-full items-start gap-8 lg:gap-10">
+          <!-- ===================== SIDEBAR ===================== -->
+
+          <aside class="hidden w-55 shrink-0 lg:block">
+            <!-- Sidebar Header -->
+
+            <div class="mb-8">
+              <p
+                class="mb-2 font-inter text-[12px] font-medium uppercase tracking-[1.2px] text-nav"
+              >
+                Luxury Skincare
+              </p>
+
+              <h2
+                class="font-playfair text-[28px] font-semibold leading-9 text-secondery"
+              >
+                Filters
+              </h2>
+            </div>
+
+            <!-- Refine -->
+
+            <div class="mb-8">
+              <p
+                class="mb-5 font-inter text-[14px] font-medium leading-5 text-secondery"
+              >
+                Refine your selection
+              </p>
+
+              <!-- Category -->
+
+              <div class="border-b border-[#EAE8E7] py-5">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between"
+                >
+                  <span
+                    class="font-inter text-[14px] font-medium text-secondery"
+                  >
+                    Category
+                  </span>
+
+                  <span class="text-secondery">+</span>
+                </button>
+
+                <div class="mt-4 flex flex-col gap-3">
+                  <label class="flex items-center gap-2">
+                    <input type="checkbox" class="h-4 w-4 accent-[#82505B]" />
+
+                    <span class="font-inter text-[13px] text-nav"> New </span>
+                  </label>
+
+                  <label class="flex items-center gap-2">
+                    <input type="checkbox" class="h-4 w-4 accent-[#82505B]" />
+
+                    <span class="font-inter text-[13px] text-nav">
+                      Bestseller
+                    </span>
+                  </label>
+
+                  <label class="flex items-center gap-2">
+                    <input type="checkbox" class="h-4 w-4 accent-[#82505B]" />
+
+                    <span class="font-inter text-[13px] text-nav"> Sale </span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Brand -->
+
+              <div class="border-b border-[#EAE8E7] py-5">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between"
+                >
+                  <span
+                    class="font-inter text-[14px] font-medium text-secondery"
+                  >
+                    Brand
+                  </span>
+
+                  <span class="text-secondery">+</span>
+                </button>
+              </div>
+
+              <!-- Price Range -->
+
+              <div class="border-b border-[#EAE8E7] py-5">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between"
+                >
+                  <span
+                    class="font-inter text-[14px] font-medium text-secondery"
+                  >
+                    Price Range
+                  </span>
+
+                  <span class="text-secondery">+</span>
+                </button>
+
+                <div class="mt-5">
+                  <div class="mb-3 flex justify-between">
+                    <span class="font-inter text-[12px] text-nav"> $0 </span>
+
+                    <span class="font-inter text-[12px] text-nav"> $500 </span>
+                  </div>
+
+                  <input
+                    type="range"
+                    min="0"
+                    max="500"
+                    class="w-full accent-[#82505B]"
+                  />
+                </div>
+              </div>
+
+              <!-- Skin Type -->
+
+              <div class="border-b border-[#EAE8E7] py-5">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between"
+                >
+                  <span
+                    class="font-inter text-[14px] font-medium text-secondery"
+                  >
+                    Skin Type
+                  </span>
+
+                  <span class="text-secondery">+</span>
+                </button>
+              </div>
+
+              <!-- Concerns -->
+
+              <div class="border-b border-[#EAE8E7] py-5">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between"
+                >
+                  <span
+                    class="font-inter text-[14px] font-medium text-secondery"
+                  >
+                    Concerns
+                  </span>
+
+                  <span class="text-secondery">+</span>
+                </button>
+              </div>
+            </div>
+          </aside>
+
+          <!-- ===================== PRODUCTS AREA ===================== -->
+
+          <main class="min-w-0 flex-1">
+            <!-- Products Header -->
+
+            <div class="mb-6 hidden items-center justify-between lg:flex">
+              <p class="font-inter text-[13px] font-normal text-nav">
+                Showing 24 of 152 products
+              </p>
+
+              <button
+                type="button"
+                class="flex items-center gap-2 font-inter text-[13px] font-medium text-secondery"
+              >
+                <span>Sort by:</span>
+
+                <span>Newest Arrivals</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L4.5 4.5L8 1"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Products Count -->
+
+            <div class="mb-5 mt-5 lg:hidden">
+              <p class="font-inter text-[12px] font-normal text-nav">
+                Showing 24 of 152 products
+              </p>
+            </div>
+
+            <!-- ===================== PRODUCT GRID ===================== -->
+
+            <div
+              class="grid w-full grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10"
+            >
+              <!-- ================= PRODUCT 1 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/Luminous Gold Elixir.svg"
+                    alt="Luminous Gold Elixir"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Rose Petal Essence</h3>
+
+                  <p class="listing-product-price">$85.00</p>
+
+                  <p class="listing-product-description">
+                    A soothing hydration booster infused with hand-picked damask
+                    rose extracts for a radiant glow.
+                  </p>
+
+                  <span class="listing-product-rating"> (42) </span>
+                </div>
+              </article>
+
+              <!-- ================= PRODUCT 2 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/Cloud Moisture Cream.svg"
+                    alt="Cloud Moisture Cream"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Midnight Saffron</h3>
+
+                  <p class="listing-product-price">$145.00</p>
+
+                  <p class="listing-product-description">
+                    A deep, seductive blend of rare saffron, dark woods, and a
+                    hint of vanilla bean.
+                  </p>
+
+                  <span class="listing-product-rating"> (128) </span>
+                </div>
+              </article>
+
+              <!-- ================= PRODUCT 3 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/Radiance Serum.svg"
+                    alt="Radiance Serum"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <span class="listing-product-badge"> New </span>
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Velvet Rose Lip</h3>
+
+                  <div class="listing-product-price-row">
+                    <span class="listing-product-sale-price"> $28.00 </span>
+
+                    <span class="listing-product-old-price"> $35.00 </span>
+                  </div>
+
+                  <p class="listing-product-description">
+                    A weightless, long-wearing matte lipstick that feels like
+                    silk on your lips.
+                  </p>
+
+                  <span class="listing-product-rating"> (89) </span>
+                </div>
+              </article>
+
+              <!-- ================= PRODUCT 4 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/Velvet Petal Lip Tint.svg"
+                    alt="Velvet Petal Lip Tint"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Aqua Surge Cream</h3>
+
+                  <p class="listing-product-price">$62.00</p>
+
+                  <p class="listing-product-description">
+                    Deeply nourishing night cream that uses sea-minerals to
+                    replenish skin's moisture barrier.
+                  </p>
+
+                  <span class="listing-product-rating"> (56) </span>
+                </div>
+              </article>
+
+              <!-- ================= PRODUCT 5 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/Golden Glow Oil.svg"
+                    alt="Golden Glow Oil"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Golden Glow Oil</h3>
+
+                  <p class="listing-product-price">$92.00</p>
+
+                  <p class="listing-product-description">
+                    A potent blend of Vitamin C and botanical oils to brighten
+                    and even out skin tone instantly.
+                  </p>
+
+                  <span class="listing-product-rating"> (210) </span>
+                </div>
+              </article>
+
+              <!-- ================= PRODUCT 6 ================= -->
+
+              <article class="group">
+                <div class="listing-product-image-wrapper">
+                  <img
+                    src="./assets/img/ALL-PRODECT/sunlit-palette.svg"
+                    alt="Sunlit Palette"
+                    class="listing-product-image group-hover:scale-105"
+                  />
+
+                  <button class="listing-add-cart">Add to Cart</button>
+                </div>
+
+                <div>
+                  <h3 class="listing-product-name">Sunlit Palette</h3>
+
+                  <p class="listing-product-price">$55.00</p>
+
+                  <p class="listing-product-description">
+                    Twelve highly-pigmented shades inspired by the shifting
+                    light of a Mediterranean sunset.
+                  </p>
+
+                  <span class="listing-product-rating"> (15) </span>
+                </div>
+              </article>
+            </div>
+
+            <!-- ===================== PAGINATION ===================== -->
+
+            <div class="mt-12 flex items-center justify-center gap-5 pb-12">
+              <button class="font-inter text-[13px] font-medium text-[#82505B]">
+                1
+              </button>
+
+              <button class="font-inter text-[13px] text-nav">2</button>
+
+              <button class="font-inter text-[13px] text-nav">3</button>
+
+              <span class="font-inter text-[13px] text-nav"> ... </span>
+
+              <button class="font-inter text-[13px] text-nav">12</button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="mt-40.25 border-t border-[#D5C2C4] bg-[#EAE8E7] max-md:hidden"
+    >
+      <div class="container flex flex-col gap-12 py-20">
+        <!-- Footer Columns -->
+
+        <div class="grid grid-cols-4 gap-12">
+          <!-- ================================
+           BRAND INFO
+      ================================= -->
+
+          <div class="flex flex-col gap-4 pb-5.5">
+            <a
+              href="#"
+              class="font-playfair text-[32px] font-semibold leading-10 text-[#82505B]"
+            >
+              GLOW RITUAL
+            </a>
+
+            <p
+              class="font-inter text-[16px] font-normal leading-6 text-primary"
+            >
+              Elevating daily routines into sacred self-care rituals. Crafted
+              for the modern, radiant woman.
+            </p>
+
+            <!-- Social Links -->
+
+            <div class="flex items-center gap-4 pt-4">
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" class="footer-social-link">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ================================
+           DISCOVERY
+      ================================= -->
+
+          <div class="flex flex-col gap-6">
+            <h4 class="footer-heading">DISCOVERY</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link"> Skincare </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Cosmetics </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Perfumes </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> New Arrivals </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Best Sellers </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ================================
+           ASSISTANCE
+      ================================= -->
+
+          <div class="flex flex-col gap-6">
+            <h4 class="footer-heading">ASSISTANCE</h4>
+
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link"> Shipping & Returns </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Contact Support </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Privacy Policy </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Store Locator </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link"> Sustainability </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ================================
+           OUR ATELIER
+      ================================= -->
+
+          <div class="flex flex-col gap-2 pb-18">
+            <h4 class="footer-heading">OUR ATELIER</h4>
+
+            <p class="pt-2 footer-paragraph">124 Avenue des Champs-Élysées</p>
+
+            <p class="footer-paragraph">Paris, France</p>
+
+            <a
+              href="#"
+              class="pt-2 footer-paragraph transition hover:text-[#82505B]"
+            >
+              contact@glowritual.com
+            </a>
+          </div>
+        </div>
+
+        <!-- ================================
+         BOTTOM BAR
+    ================================= -->
+
+        <div
+          class="flex items-center justify-between border-t border-[#D5C2C4]/30 py-8"
+        >
+          <p class="fotter-paragraf opacity-70">
+            © 2025 GLOW RITUAL. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ====================MOBILE BOTTOM NAVIGATION======================= -->
+
+    <nav
+      class="fixed bottom-0 left-0 right-0 z-50 flex h-18.25 border-t border-[#E4E2E1]/50 bg-[#FBF9F8]/90 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] backdrop-blur-[6px] md:hidden"
+    >
+      <div
+        class="flex h-18 w-full items-center justify-between px-[16.75px] pb-2"
+      >
+        <!-- HOME -->
+
+        <a href="#" class="mobile-a">
+          <div
+            class="flex items-center justify-center rounded-full bg-[#C98F9A]/20"
+          >
+            <i class="imag-buttons">
+              <img src="./assets/img/icons/home.svg" alt="the icon cart" />
+            </i>
+          </div>
+
+          <span class="text-icons-mobile"> Home </span>
+        </a>
+
+        <!-- EXPLORE -->
+
+        <a href="#" class="mobile-a">
+          <div class="flex items-center justify-center">
+            <i class="imag-buttons"
+              ><img src="./assets/img/icons/searche.svg" alt="the icon cart"
+            /></i>
+          </div>
+
+          <span class="text-icons-mobile"> serarch </span>
+        </a>
+
+        <!-- CART -->
+
+        <!-- CART -->
+
+        <a href="#" class="relative mobile-a">
+          <div class="flex items-center justify-center">
+            <i class="imag-buttons">
+              <img
+                src="./assets/img/icons/Shopping-Cart.svg"
+                alt="the icon cart"
+              />
+            </i>
+          </div>
+
+          <span class="text-icons-mobile"> Cart </span>
+
+          <!-- Cart Badge -->
+
+          <span
+            class="absolute right-1 top-0 flex h-3 w-3 items-center justify-center rounded-full bg-[#82505B] font-inter text-[8px] font-bold leading-3 text-white"
+          >
+            2
+          </span>
+        </a>
+
+        <!-- PROFILE -->
+
+        <a href="#" class="mobile-a">
+          <div class="flex items-center justify-center">
+            <i class="imag-buttons">
+              <img src="./assets/img/icons/personal.svg" alt="the icon cart" />
+            </i>
+          </div>
+
+          <span class="text-icons-mobile"> Profile </span>
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

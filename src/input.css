@@ -428,3 +428,106 @@
 @utility text-icons-mobile {
    @apply font-inter text-[10px] font-normal leading-3.75 text-primary;
 }
+/* ========================================
+   PRODUCT LISTING
+======================================== */
+
+/* Product Image Wrapper */
+
+@utility listing-product-image-wrapper {
+
+    @apply relative mb-4 aspect-[0.85] overflow-hidden
+           bg-[#F1ECEA];
+}
+
+
+/* Product Image */
+
+@utility listing-product-image {
+
+    @apply h-full w-full object-cover
+           transition duration-500;
+}
+
+
+/* Product Badge */
+
+@utility listing-product-badge {
+
+    @apply absolute left-3 top-3 bg-[#82505B]
+           px-2 py-1 font-inter text-[10px]
+           font-medium text-white;
+}
+
+
+/* Add To Cart Button */
+
+@utility listing-add-cart {
+
+    @apply absolute bottom-3 left-3 right-3
+           hidden h-10 bg-[#FBF9F8]
+           font-inter text-[12px] font-medium
+           text-secondery lg:block;
+}
+
+
+/* Product Name */
+
+@utility listing-product-name {
+
+    @apply font-playfair text-[18px] font-medium
+           leading-6 text-secondery;
+}
+
+
+/* Product Price */
+
+@utility listing-product-price {
+
+    @apply mt-1 font-inter text-[14px]
+           text-secondery;
+}
+
+
+/* Product Description */
+
+@utility listing-product-description {
+
+    @apply mt-3 font-inter text-[12px]
+           leading-4.5 text-nav;
+}
+
+
+/* Product Rating */
+
+@utility listing-product-rating {
+
+    @apply mt-2 block font-inter text-[11px]
+           text-nav;
+}
+
+
+/* Product Sale Price */
+
+@utility listing-product-sale-price {
+
+    @apply font-inter text-[14px]
+           text-secondery;
+}
+
+
+/* Product Old Price */
+
+@utility listing-product-old-price {
+
+    @apply font-inter text-[12px]
+           text-[#999];
+}
+
+
+/* Product Price Row */
+
+@utility listing-product-price-row {
+
+    @apply mt-1 flex items-center gap-2;
+}
