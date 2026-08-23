@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GLOW RITUAL</title>
+
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <!-- Tailwind -->
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+<body>
+     <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
+    <div class="container">
+      <div class="row justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-[50.82px]">
+        <!-- Logo -->
+        <a href="./index.html"
+          class="shrink-0 whitespace-nowrap py-3 font-playfair text-[30px] font-semibold tracking-wide text-[#82505B] sm:text-[36px] lg:text-[48px]">
+          GLOW RITUAL
+        </a>
+        <!-- Navigation -->
+        <nav class="hidden items-center gap-5 py-7.25 font-inter text-[14px] font-semibold leading-4 text-nav lg:flex ">
+          <a href="./All-prodect.html" class="nav-link"> Skincare </a>
+          <a href="#" class="nav-link"> Cosmetics </a>
+          <a href="#" class="nav-link"> Perfumes </a>
+          <a href="#" class="nav-link"> New Arivales </a>
+          <a href="#" class="nav-link"> Best sellers </a>
+          <a href="./nav-active" class="nav-active"> Rituals </a>
+        </nav>
+        <!-------- Icons --------->
+        <div class="flex shrink-0 items-center gap-3 sm:gap-4 xl:gap-6 text-[#82505b]">
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/searche.svg" alt="this is image the icon searche" />
+          </button>
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/hearticoons.svg" alt="this is hert icon" />
+          </button>
+          <button class="icon-btn hidden sm:block">
+            <img src="./assets/img/icons/personal.svg" alt="this is the icons prsonal" />
+          </button>
+          <button class="icon-btn relative hidden sm:block">
+            <img src="./assets/img/icons/Shopping-Cart.svg" alt="this is the icon Shopping cart" />
+
+            <!-- Cart Count -->
+            <span
+              class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[#82505b] font-inter text-[11px] font-semibold leading-none text-white">
+              2
+            </span>
+          </button>
+          <!------------- Mobile Menu ------------------->
+          <button class="icon-bt text-secondery text-lg lg:hidden">
+            <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+          </button>
+        </div>
+      </div>
+    </div>
+     </header>
+
+    <main class="relative isolate overflow-hidden">
+
+        <!-- Subtle Gold Background Pattern -->
+        <div
+            class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-full opacity-[0.03]"
+            style="
+                background:
+                radial-gradient(
+                    70.71% 70.71% at 50% 50%,
+                    #BF9945 1.47%,
+                    rgba(191,153,69,0) 1.47%
+                );
+            "
+        ></div>
+
+
+        <!-- ========================================
+             CONTACT CONTENT
+        ========================================= -->
+        <section
+            class="mx-auto flex w-full max-w-7xl flex-col gap-12 px-5 py-12
+                   sm:px-6 sm:py-16
+                   lg:gap-20 lg:px-10 lg:py-20
+                   xl:px-16"
+        >
+
+            <!-- ========================================
+                 MOBILE / PAGE INTRO
+            ========================================= -->
+            <div class="flex flex-col items-center text-center lg:hidden">
+
+                <span
+                    class="font-inter text-[12px] font-semibold uppercase tracking-[1.4px] text-[#795905]"
+                >
+                    Get in touch
+                </span>
+
+                <h1
+                    class="mt-3 font-playfair text-[40px] font-bold leading-12 tracking-[-0.4px] text-secondery"
+                >
+                    Contact Us
+                </h1>
+
+                <p
+                    class="mt-3 max-w-83 font-inter text-[16px] font-normal leading-6 text-primary"
+                >
+                    Tell us about your needs, and we'll curate a response
+                    specifically for you.
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 DESKTOP HERO
+            ========================================= -->
+            <div class="grid w-full grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
+
+                <!-- ====================================
+                     LEFT SIDE
+                ===================================== -->
+                <div class="flex flex-col gap-12">
+
+                    <!-- Intro -->
+                    <div class="hidden flex-col gap-3 lg:flex">
+
+                        <span
+                            class="font-inter text-[14px] font-semibold uppercase
+                                   tracking-[1.4px] text-[#795905]"
+                        >
+                            Get in touch
+                        </span>
+
+                        <h1
+                            class="font-playfair text-[48px] font-semibold leading-14 text-[#82505B]"
+                        >
+                            Contact Us
+                        </h1>
+
+                        <p
+                            class="max-w-[384px] font-inter text-[16px] font-normal
+                                   leading-6.5 text-primary"
+                        >
+                            Tell us about your needs, and we'll curate a response
+                            specifically for you.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ====================================
+                         MOBILE QUICK ACTION CARDS
+                    ===================================== -->
+                    <div class="grid grid-cols-1 gap-6 lg:hidden">
+
+                        <!-- Email -->
+                        <a
+                            href="mailto:care@glowritual.com"
+                            class="flex min-h-53.5 w-full flex-col items-center
+                                   justify-center rounded-xl border border-[#E4E2E1]
+                                   bg-[#F6F3F2] p-8 text-center shadow-sm
+                                   transition hover:-translate-y-1 hover:shadow-md"
+                        >
+                            <div
+                                class="mb-3 flex h-12 w-12 items-center justify-center
+                                       rounded-full bg-[#C98F9A]"
+                            >
+                                <img src="./assets/img/contact/icons/email.svg"alt="Boutiques"class="h-5 w-5 "/>
+                            </div>
+
+                            <h2
+                                class="font-playfair text-[24px] font-medium
+                                       leading-8 text-secondery"
+                            >
+                                Email
+                            </h2>
+
+                            <p
+                                class="mt-1 font-inter text-[14px] leading-5 text-primary"
+                            >
+                                care@glowritual.com
+                            </p>
+                        </a>
+
+
+                        <!-- Boutiques -->
+                        <a
+                            href="#boutique"
+                            class="flex min-h-53.5 w-full flex-col items-center
+                                   justify-center rounded-xl border border-[#E4E2E1]
+                                   bg-[#F6F3F2] p-8 text-center shadow-sm
+                                   transition hover:-translate-y-1 hover:shadow-md"
+                        >
+                            <div
+                                class="mb-3 flex h-12 w-12 items-center justify-center
+                                       rounded-full bg-[#F3DFCE]"
+                            >
+                                <img src="./assets/img/contact/icons/boutices.svg"alt="Boutiques"class="h-5 w-5 object-contain"/>
+                            </div>
+
+                            <h2
+                                class="font-playfair text-[24px] font-medium
+                                       leading-8 text-secondery"
+                            >
+                                Boutiques
+                            </h2>
+
+                            <p
+                                class="mt-1 font-inter text-[14px] leading-5 text-primary"
+                            >
+                                Visit our flagship store
+                            </p>
+                        </a>
+
+                    </div>
+
+
+                    <!-- ====================================
+                         DESKTOP CONTACT CARDS
+                    ===================================== -->
+                    <div class="hidden grid-cols-2 gap-7 lg:grid">
+
+                        <!-- Email -->
+                        <div
+                            class="flex min-h-50.75 flex-col rounded-xl
+                                   border border-[#D5C2C4] bg-[#F6F3F2]
+                                   p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]"
+                        >
+                            <img src="./assets/img/contact/icons/email.svg" alt="Email" class="h-5 w-5 object-contain"/>
+
+                            <h3
+                                class="mt-3 font-playfair text-[24px] font-medium
+                                       leading-8 text-[#82505B]"
+                            >
+                                Email
+                            </h3>
+
+                            <p
+                                class="mt-2 font-inter text-[16px] leading-6 text-primary"
+                            >
+                                Our curators typically respond within 24 hours.
+                            </p>
+
+                            <a
+                                href="mailto:care@glowritual.com"
+                                class="mt-auto font-inter text-[14px] font-semibold
+                                       tracking-[0.7px] text-[#82505B] hover:text-[#795905]"
+                            >
+                                → care@glowritual.com
+                            </a>
+                        </div>
+
+
+                        <!-- Boutiques -->
+                        <div
+                            class="flex min-h-50.75 flex-col rounded-xl
+                                   border border-[#D5C2C4] bg-[#F6F3F2]
+                                   p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]"
+                        >
+                            <img src="./assets/img/contact/icons/boutices.svg"alt="Boutiques"class="h-5 w-5 object-contain"/>
+
+                            <h3
+                                class="mt-3 font-playfair text-[24px] font-medium
+                                       leading-8 text-[#82505B]"
+                            >
+                                Boutiques
+                            </h3>
+
+                            <p
+                                class="mt-2 font-inter text-[16px] leading-6 text-primary"
+                            >
+                                Visit our flagship rituals in Paris and New York.
+                            </p>
+
+                            <a
+                                href="#boutique"
+                                class="mt-auto font-inter text-[14px] font-semibold
+                                       tracking-[0.7px] text-[#82505B] hover:text-[#795905]"
+                            >
+                                → Store Locator
+                            </a>
+                        </div>
+
+
+                        <!-- Concierge -->
+                        <div
+                            class="flex min-h-50.75 flex-col rounded-xl
+                                   border border-[#D5C2C4] bg-[#F6F3F2]
+                                   p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]"
+                        >
+                            <img src="./assets/img/contact/icons/phone.svg" alt="Concierge" class="h-5 w-5 object-contain"/>
+
+                            <h3
+                                class="mt-3 font-playfair text-[24px] font-medium
+                                       leading-8 text-[#82505B]"
+                            >
+                                Concierge
+                            </h3>
+
+                            <p
+                                class="mt-2 font-inter text-[16px] leading-6 text-primary"
+                            >
+                                Available Mon-Fri, 9am - 6pm EST.
+                            </p>
+
+                            <a
+                                href="tel:+15550000000"
+                                class="mt-auto font-inter text-[14px] font-semibold
+                                       tracking-[0.7px] text-[#82505B] hover:text-[#795905]"
+                            >
+                                +1 (555) 000-0000
+                            </a>
+                        </div>
+
+
+                        <!-- Socials -->
+                        <div
+                            class="flex min-h-50.75 flex-col rounded-xl
+                                   border border-[#D5C2C4] bg-[#F6F3F2]
+                                   p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]"
+                        >
+                            <img src="./assets/img/contact/icons/share.svg" alt="Socials"class="h-5 w-5 object-contain"
+/>
+
+                            <h3
+                                class="mt-3 font-playfair text-[24px] font-medium
+                                       leading-8 text-[#82505B]"
+                            >
+                                Socials
+                            </h3>
+
+                            <p
+                                class="mt-2 font-inter text-[16px] leading-6 text-primary"
+                            >
+                                Follow our journey for daily skin inspirations.
+                            </p>
+
+                            <div class="mt-auto flex gap-4">
+                                <a
+                                    href="#"
+                                    class="font-inter text-[16px] text-[#82505B]"
+                                    aria-label="Instagram"
+                                >
+                                    IG
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="font-inter text-[16px] text-[#82505B]"
+                                    aria-label="Facebook"
+                                >
+                                    FB
+                                </a>
+
+                                <a
+                                    href="#"
+                                    class="font-inter text-[16px] text-[#82505B]"
+                                    aria-label="Pinterest"
+                                >
+                                    PI
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ====================================
+                         EDITORIAL IMAGE
+                    ===================================== -->
+                    <div
+                        class="hidden h-64 overflow-hidden rounded-xl
+                               shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]
+                               lg:block"
+                    >
+                        <img
+                            src="./assets/img/contact/img-leftSide.svg"
+                            alt="Glow Ritual skincare"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+
+                </div>
+
+
+                <!-- ====================================
+                     RIGHT SIDE — CONTACT FORM
+                ===================================== -->
+                <div
+                    class="relative rounded-xl border border-[#D5C2C4]
+                           bg-white p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]
+                           sm:p-8 lg:p-10"
+                >
+
+                    <!-- Decorative corner -->
+                    <div
+                        class="pointer-events-none absolute -right-16 -top-16
+                               h-32 w-32 rounded-bl-full bg-[#F3DFCE]/20"
+                    ></div>
+
+
+                    <div class="relative">
+
+                        <h2
+                            class="font-playfair text-[32px] font-semibold
+                                   leading-10 text-[#82505B] lg:text-[#82505B]"
+                        >
+                            Send a Message
+                        </h2>
+
+                        <p
+                            class="mt-3 font-inter text-[16px] leading-6 text-primary"
+                        >
+                            Tell us about your needs, and we'll curate a response
+                            specifically for you.
+                        </p>
+
+
+                        <!-- FORM -->
+                        <form class="mt-8 flex flex-col gap-6">
+
+                            <!-- Name + Email -->
+                            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+                                <!-- Full Name -->
+                                <div>
+                                    <label
+                                        for="full-name"
+                                        class="mb-2 block font-inter text-[12px]
+                                               font-medium uppercase tracking-[0.6px]
+                                               text-secondery"
+                                    >
+                                        Full Name
+                                    </label>
+
+                                    <input
+                                        id="full-name"
+                                        type="text"
+                                        placeholder="Jane Doe"
+                                        class="h-12.25 w-full rounded-lg border
+                                               border-[#D5C2C4] bg-[#F6F3F2]
+                                               px-3 font-inter text-[16px]
+                                               text-primary outline-none
+                                               placeholder:text-[#6B7280]
+                                               focus:border-[#82505B]
+                                               focus:ring-1 focus:ring-[#82505B]"
+                                    />
+                                </div>
+
+
+                                <!-- Email -->
+                                <div>
+                                    <label
+                                        for="email"
+                                        class="mb-2 block font-inter text-[12px]
+                                               font-medium uppercase tracking-[0.6px]
+                                               text-secondery"
+                                    >
+                                        Email Address
+                                    </label>
+
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="jane@example.com"
+                                        class="h-12.25 w-full rounded-lg border
+                                               border-[#D5C2C4] bg-[#F6F3F2]
+                                               px-3 font-inter text-[16px]
+                                               text-primary outline-none
+                                               placeholder:text-[#6B7280]
+                                               focus:border-[#82505B]
+                                               focus:ring-1 focus:ring-[#82505B]"
+                                    />
+                                </div>
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div>
+                                <label
+                                    for="phone"
+                                    class="mb-2 block font-inter text-[12px]
+                                           font-medium uppercase tracking-[0.6px]
+                                           text-secondery"
+                                >
+                                    Phone Number (Optional)
+                                </label>
+
+                                <input
+                                    id="phone"
+                                    type="tel"
+                                    placeholder="+1 (555) 000-0000"
+                                    class="h-12.5 w-full rounded-lg border
+                                           border-[#D5C2C4] bg-[#F6F3F2]
+                                           px-3 font-inter text-[16px]
+                                           text-primary outline-none
+                                           placeholder:text-[#6B7280]
+                                           focus:border-[#82505B]
+                                           focus:ring-1 focus:ring-[#82505B]"
+                                />
+                            </div>
+
+
+                            <!-- Inquiry Type -->
+                            <div>
+                                <label
+                                    for="inquiry"
+                                    class="mb-2 block font-inter text-[12px]
+                                           font-medium uppercase tracking-[0.6px]
+                                           text-secondery"
+                                >
+                                    Inquiry Type
+                                </label>
+
+                                <div class="relative">
+                                    <select
+                                        id="inquiry"
+                                        class="h-12.5 w-full appearance-none rounded-lg
+                                               border border-[#D5C2C4]
+                                               bg-[#F6F3F2] px-3 pr-10
+                                               font-inter text-[16px]
+                                               text-secondery outline-none
+                                               focus:border-[#82505B]
+                                               focus:ring-1 focus:ring-[#82505B]"
+                                    >
+                                        <option>Skin Concierge / Advice</option>
+                                        <option>Order Inquiry</option>
+                                        <option>Product Question</option>
+                                        <option>Boutique Inquiry</option>
+                                    </select>
+
+                                    <span
+                                        class="pointer-events-none absolute right-4
+                                               top-1/2 -translate-y-1/2 text-[#6B7280]"
+                                    >
+                                        ↓
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <!-- Message -->
+                            <div>
+                                <label
+                                    for="message"
+                                    class="mb-2 block font-inter text-[12px]
+                                           font-medium uppercase tracking-[0.6px]
+                                           text-secondery"
+                                >
+                                    Your Ritual Needs
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    rows="5"
+                                    placeholder="How can we help you achieve your glow?"
+                                    class="min-h-36.5 w-full resize-none rounded-lg
+                                           border border-[#D5C2C4]
+                                           bg-[#F6F3F2] px-3 py-3
+                                           font-inter text-[16px] leading-6
+                                           text-primary outline-none
+                                           placeholder:text-[#6B7280]
+                                           focus:border-[#82505B]
+                                           focus:ring-1 focus:ring-[#82505B]"
+                                ></textarea>
+                            </div>
+
+
+                            <!-- Submit -->
+                            <button
+                                type="submit"
+                                class="flex h-12 w-full items-center justify-center
+                                       gap-2 rounded-lg bg-[#82505B]
+                                       px-6 font-inter text-[14px] font-semibold
+                                       tracking-[0.7px] text-white transition
+                                       hover:bg-[#704450] active:scale-[0.99]"
+                            >
+                                Send Message
+                                <span aria-hidden="true">→</span>
+                            </button>
+
+
+                            <!-- Privacy -->
+                            <p
+                                class="text-center font-inter text-[10px]
+                                       uppercase leading-3.75 tracking-[1px]
+                                       text-primary"
+                            >
+                                Your information is kept private and will never
+                                be shared.
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 MOBILE BOUTIQUE + MAP
+            ========================================= -->
+            <section
+                id="boutique"
+                class="flex flex-col rounded-xl border border-[#E4E2E1]
+                       bg-white p-6 shadow-[0_10px_30px_rgba(51,51,51,0.05)]
+                       lg:hidden"
+            >
+
+                <h2
+                    class="font-playfair text-[32px] font-semibold
+                           leading-10 text-secondery"
+                >
+                    SoHo Flagship
+                </h2>
+
+                <p
+                    class="mt-3 font-inter text-[16px] leading-6 text-primary"
+                >
+                    Experience our collections in person and enjoy a complimentary
+                    skin consultation.
+                </p>
+
+
+                <!-- Address -->
+                <div class="mt-5 flex gap-3">
+
+                    <span class="mt-1 text-[#82505B]"></span>
+
+                    <div class="font-inter text-[16px] leading-6 text-secondery">
+                        <p>123 Mercer Street</p>
+                        <p>New York, NY 10012</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Hours -->
+                <div class="mt-3 flex gap-3">
+
+                    <span class="mt-1 text-[#82505B]">◷</span>
+
+                    <div class="font-inter text-[16px] leading-6 text-secondery">
+                        <p>Mon - Fri: 9am - 6pm</p>
+                        <p>Sat - Sun: 10am - 5pm</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Map -->
+                <div
+                    class="mt-6 h-48 w-full overflow-hidden rounded-lg
+                           bg-[#F3DFCE]"
+                >
+                    <img
+                        src="./assets/img/contact/Map of mobile.svg"
+                        alt="Map of SoHo Flagship Location"
+                        class="h-full w-full object-cover"
+                    />
+                </div>
+
+            </section>
+
+
+            <!-- ========================================
+                 DESKTOP MAP
+            ========================================= -->
+            <section
+                class="relative hidden h-96 overflow-hidden rounded-xl
+                       border border-[#D5C2C4]
+                       shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1)]
+                       lg:block"
+            >
+
+                <img
+                    src="./assets/img/contact/map.svg"
+                    alt="Map of SoHo Flagship Location"
+                    class="h-full w-full object-cover"
+                />
+
+                <!-- Map Overlay -->
+                <div
+                    class="absolute inset-0 bg-white/40 mix-blend-multiply"
+                ></div>
+
+
+                <!-- Map Info -->
+                <div
+                    class="absolute bottom-8 left-8 w-[320px] rounded-lg
+                           border border-[#D5C2C4] bg-white p-6
+                           shadow-[0_10px_30px_rgba(51,51,51,0.05)]"
+                >
+
+                    <h3
+                        class="font-playfair text-[24px] font-medium
+                               leading-8 text-[#82505B]"
+                    >
+                        SoHo Flagship
+                    </h3>
+
+                    <p
+                        class="mt-2 font-inter text-[16px] leading-6.5
+                               text-primary"
+                    >
+                        123 Mercer Street<br />
+                        New York, NY 10012<br />
+                        Mon - Fri: 9am - 6pm
+                    </p>
+
+                    <a
+                        href="#"
+                        class="mt-4 inline-block font-inter text-[14px]
+                               font-semibold tracking-[0.7px] text-[#795905]
+                               hover:text-[#82505B]"
+                    >
+                        Get Directions →
+                    </a>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+      <!-- =================FOOTER========================= -->
+
+  <footer class="mt-40.25 border-t border-[#D5C2C4] bg-[#EAE8E7] max-md:hidden">
+    <div class="container flex flex-col gap-12 py-20">
+      <!-- Footer Columns -->
+
+      <div class="grid grid-cols-4 gap-12">
+        <!-- ================================
+           BRAND INFO
+      ================================= -->
+
+        <div class="flex flex-col gap-4 pb-5.5">
+          <a href="#" class="font-playfair text-[32px] font-semibold leading-10 text-[#82505B]">
+            GLOW RITUAL
+          </a>
+
+          <p class="font-inter text-[16px] font-normal leading-6 text-primary">
+            Elevating daily routines into sacred self-care rituals. Crafted
+            for the modern, radiant woman.
+          </p>
+
+          <!-- Social Links -->
+
+          <div class="flex items-center gap-4 pt-4">
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================================
+           DISCOVERY
+      ================================= -->
+
+        <div class="flex flex-col gap-6">
+          <h4 class="footer-heading">DISCOVERY</h4>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link"> Skincare </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Cosmetics </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Perfumes </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> New Arrivals </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Best Sellers </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ================================
+           ASSISTANCE
+      ================================= -->
+
+        <div class="flex flex-col gap-6">
+          <h4 class="footer-heading">ASSISTANCE</h4>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#" class="footer-link"> Shipping & Returns </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Contact Support </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Store Locator </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"> Sustainability </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ================================
+           OUR ATELIER
+      ================================= -->
+
+        <div class="flex flex-col gap-2 pb-18">
+          <h4 class="footer-heading">OUR ATELIER</h4>
+
+          <p class="pt-2 footer-paragraph">
+            124 Avenue des Champs-Élysées
+          </p>
+
+          <p class="footer-paragraph">
+            Paris, France
+          </p>
+
+          <a href="#" class="pt-2 footer-paragraph transition hover:text-[#82505B]">
+            contact@glowritual.com
+          </a>
+        </div>
+      </div>
+
+      <!-- ================================
+         BOTTOM BAR
+    ================================= -->
+
+      <div class="flex items-center justify-between border-t border-[#D5C2C4]/30 py-8">
+        <p class="fotter-paragraf opacity-70">
+          © 2025 GLOW RITUAL. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
