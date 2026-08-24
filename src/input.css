@@ -535,3 +535,491 @@
 
     @apply mt-1 flex items-center gap-2;
 }
+
+/* ========================================
+   AUTH / LOGIN REGISTER
+======================================== */
+
+/* Auth Page */
+
+@utility auth-page {
+    @apply min-h-screen w-full bg-[#FBF9F8];
+}
+
+
+/* Auth Header */
+
+@utility auth-header {
+    @apply fixed left-0 right-0 top-0 z-20
+           h-20
+           bg-[#FBF9F8]/80
+           backdrop-blur-md;
+}
+
+
+/* Auth Header Container */
+
+@utility auth-header-container {
+    @apply mx-auto flex h-20 w-full max-w-[1280px]
+           items-center justify-between
+           px-5
+           sm:px-8
+           lg:px-16;
+}
+
+
+/* Auth Logo */
+
+@utility auth-logo {
+    @apply font-playfair text-[32px] font-semibold
+           leading-10 tracking-[-0.8px]
+           text-[#82505B]
+           sm:text-[48px] sm:leading-14
+           sm:tracking-[-1.2px];
+}
+
+
+/* Auth Header Navigation */
+
+@utility auth-nav {
+    @apply hidden items-center gap-8
+           lg:flex;
+}
+
+
+/* Auth Header Nav Link */
+
+@utility auth-nav-link {
+    @apply font-inter text-[14px] font-semibold
+           leading-4 tracking-[0.7px]
+           text-nav transition
+           hover:text-[#82505B];
+}
+
+
+/* Auth Header Actions */
+
+@utility auth-actions {
+    @apply hidden items-center gap-6
+           lg:flex;
+}
+
+
+/* Auth Main */
+
+@utility auth-main {
+    @apply relative flex min-h-screen w-full
+           items-end justify-center
+           px-5 pt-[228px] pb-20
+           lg:min-h-0
+           lg:h-[927px]
+           lg:items-center
+           lg:px-16
+           lg:pt-[172.5px]
+           lg:pb-[92.5px];
+}
+
+
+/* Auth Card */
+
+@utility auth-card {
+    @apply relative flex w-full max-w-[448px]
+           flex-col overflow-hidden
+           rounded-t-[24px]
+           border border-[#EAE8E7]
+           bg-[#FBF9F8]/85
+           shadow-[0_1px_2px_rgba(27,28,28,0.05)]
+           backdrop-blur-md
+           lg:h-[662px]
+           lg:max-w-[1000px]
+           lg:flex-row
+           lg:rounded-xl
+           lg:bg-white
+           lg:backdrop-blur-none;
+}
+
+
+/* Auth Editorial Side */
+
+@utility auth-editorial {
+    @apply hidden
+           lg:relative lg:flex lg:h-[660px]
+           lg:w-1/2 lg:flex-col
+           lg:justify-end
+           lg:overflow-hidden
+           lg:bg-[#F6F3F2];
+}
+
+
+/* Auth Editorial Image */
+
+@utility auth-editorial-image {
+    @apply absolute inset-0 h-full w-full
+           object-cover;
+}
+
+
+/* Auth Editorial Gradient */
+
+@utility auth-editorial-gradient {
+    @apply absolute inset-0
+           bg-gradient-to-b
+           from-transparent
+           to-[#82505B]/20;
+}
+
+
+/* Auth Editorial Content */
+
+@utility auth-editorial-content {
+    @apply relative z-10 flex flex-col
+           justify-end
+           px-12 pb-12;
+}
+
+
+/* Auth Editorial Title */
+
+@utility auth-editorial-title {
+    @apply pb-3
+           font-playfair text-[32px]
+           font-semibold leading-10
+           text-white;
+}
+
+
+/* Auth Editorial Text */
+
+@utility auth-editorial-text {
+    @apply max-w-[384px]
+           font-inter text-[16px]
+           font-normal leading-[26px]
+           text-white/90;
+}
+
+
+/* Auth Form Side */
+
+@utility auth-form-side {
+    @apply flex w-full flex-col
+           gap-6 p-6
+           lg:relative lg:h-[660px]
+           lg:w-1/2 lg:gap-0
+           lg:p-12;
+}
+
+
+/* Auth Mobile Logo */
+
+@utility auth-mobile-logo {
+    @apply flex flex-col items-center
+           gap-2;
+}
+
+
+/* Auth Mobile Logo Title */
+
+@utility auth-mobile-logo-title {
+    @apply font-playfair text-[32px]
+           font-semibold leading-10
+           tracking-[-0.8px]
+           text-[#82505B];
+}
+
+
+/* Auth Mobile Logo Subtitle */
+
+@utility auth-mobile-logo-subtitle {
+    @apply font-inter text-[14px]
+           font-normal leading-5
+           text-primary;
+}
+
+
+/* Auth Toggle Desktop */
+
+@utility auth-toggle-desktop {
+    @apply hidden
+           lg:flex lg:absolute
+           lg:left-12 lg:top-12
+           lg:w-[126px]
+           lg:flex-row lg:gap-6
+           lg:border-b lg:border-[#F0EDED];
+}
+
+
+/* Auth Toggle Mobile */
+
+@utility auth-toggle-mobile {
+    @apply flex h-[38px] w-full
+           rounded-full bg-[#EAE8E7]
+           p-1;
+}
+
+
+/* Auth Toggle Button */
+
+@utility auth-toggle-button {
+    @apply flex flex-1 items-center
+           justify-center rounded-full
+           font-inter text-[12px]
+           font-medium leading-[14px]
+           tracking-[0.36px];
+}
+
+
+/* Auth Toggle Active */
+
+@utility auth-toggle-active {
+    @apply bg-[#FBF9F8]
+           text-secondery
+           shadow-[0_1px_2px_rgba(0,0,0,0.05)];
+}
+
+
+/* Auth Form */
+
+@utility auth-form {
+    @apply flex w-full flex-col gap-3
+           lg:absolute
+           lg:left-12 lg:right-12
+           lg:top-[168px]
+           lg:w-auto
+           lg:gap-6;
+}
+
+
+/* Auth Heading */
+
+@utility auth-heading {
+    @apply font-playfair text-[24px]
+           font-medium leading-8
+           text-secondery;
+}
+
+
+/* Auth Description */
+
+@utility auth-description {
+    @apply font-inter text-[14px]
+           font-normal leading-5
+           text-primary;
+}
+
+
+/* Auth Field */
+
+@utility auth-field {
+    @apply flex w-full flex-col gap-1;
+}
+
+
+/* Auth Label */
+
+@utility auth-label {
+    @apply font-inter text-[12px]
+           font-medium leading-[14px]
+           tracking-[0.36px]
+           text-primary;
+}
+
+
+/* Auth Input */
+
+@utility auth-input {
+    @apply h-[49px] w-full
+           rounded-lg border
+           border-[#D5C2C4]
+           bg-[#FBF9F8]
+           px-4
+           font-inter text-[16px]
+           font-normal leading-[19px]
+           text-secondery
+           outline-none
+           transition
+           placeholder:text-[#6B7280]
+           focus:border-[#82505B]
+           focus:ring-1
+           focus:ring-[#82505B]/20
+           lg:bg-[#F6F3F2]
+           lg:border-[#E4E2E1];
+}
+
+
+/* Password Row */
+
+@utility auth-password-row {
+    @apply flex items-center justify-between;
+}
+
+
+/* Forgot Password */
+
+@utility auth-forgot {
+    @apply font-inter text-[12px]
+           font-medium leading-[14px]
+           tracking-[0.36px]
+           text-[#82505B]
+           transition
+           hover:opacity-70;
+}
+
+
+/* Auth Submit */
+
+@utility auth-submit {
+    @apply flex h-10 w-full
+           items-center justify-center
+           rounded-lg
+           bg-[#82505B]
+           font-inter text-[14px]
+           font-semibold leading-4
+           tracking-[0.7px]
+           text-white
+           shadow-[0_4px_6px_-1px_rgba(130,80,91,0.1),0_2px_4px_-2px_rgba(130,80,91,0.1)]
+           transition
+           hover:opacity-90
+           lg:h-12;
+}
+
+
+/* Auth Divider */
+
+@utility auth-divider {
+    @apply flex w-full items-center
+           gap-4;
+}
+
+
+/* Auth Divider Line */
+
+@utility auth-divider-line {
+    @apply h-px flex-1 bg-[#D5C2C4]
+           lg:bg-[#E4E2E1];
+}
+
+
+/* Auth Divider Text */
+
+@utility auth-divider-text {
+    @apply font-inter text-[12px]
+           font-medium leading-[14px]
+           tracking-[1.2px]
+           uppercase text-primary;
+}
+
+
+/* Social Buttons */
+
+@utility auth-socials {
+    @apply flex w-full flex-col gap-3
+           lg:flex-row;
+}
+
+
+/* Social Button */
+
+@utility auth-social-button {
+    @apply flex h-11 w-full
+           items-center justify-center
+           gap-3 rounded-lg
+           border border-[#D5C2C4]
+           bg-[#FBF9F8]
+           font-inter text-[14px]
+           font-semibold leading-4
+           tracking-[0.7px]
+           text-secondery
+           transition
+           hover:bg-white
+           lg:h-[50px]
+           lg:border-[#EBC168];
+}
+
+
+/* Apple Button */
+
+@utility auth-apple-button {
+    @apply flex h-11 w-full
+           items-center justify-center
+           gap-3 rounded-lg
+           bg-white
+           font-inter text-[14px]
+           font-semibold leading-4
+           tracking-[0.7px]
+           text-black
+           transition
+           hover:opacity-90
+           lg:h-[50px];
+}
+
+
+/* Social Icon */
+
+@utility auth-social-icon {
+    @apply h-5 w-5 shrink-0 object-contain;
+}
+
+
+/* Auth Footer */
+
+@utility auth-footer {
+    @apply flex w-full flex-col
+           items-center gap-4
+           py-6;
+}
+
+
+/* Auth Footer Links */
+
+@utility auth-footer-links {
+    @apply flex items-center
+           justify-center gap-6;
+}
+
+
+/* Auth Footer Link */
+
+@utility auth-footer-link {
+    @apply font-inter text-[11px]
+           font-normal leading-4
+           tracking-[0.55px]
+           uppercase
+           text-primary/60
+           transition
+           hover:text-[#82505B];
+}
+
+
+/* Auth Copyright */
+
+@utility auth-copyright {
+    @apply font-inter text-[11px]
+           font-normal leading-4
+           text-primary/40;
+}
+
+
+/* Mobile Decorative Background */
+
+@utility auth-mobile-background {
+    @apply absolute left-0 right-0 top-0
+           h-[441px]
+           lg:hidden;
+}
+
+
+/* Mobile Background Image */
+
+@utility auth-mobile-background-image {
+    @apply h-full w-full object-cover opacity-60;
+}
+
+
+/* Mobile Background Gradient */
+
+@utility auth-mobile-background-gradient {
+    @apply absolute inset-0
+           bg-gradient-to-b
+           from-transparent via-[#FBF9F8]
+           to-[#FBF9F8];
+}
