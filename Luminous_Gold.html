@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GLOW RITUAL | Luminous Gold Elixir Detail</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind -->
+
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body>
+    <!-- ====================HEADER======================= -->
+
+    <header class="sticky top-0 z-50 border-b border-[#eee9e5] bg-white">
+        <div class="container">
+            <div class="row justify-between gap-4 md:gap-6 lg:gap-8 xl:gap-[50.82px]">
+                <!-- Logo -->
+                <a href="./index.html"
+                    class="shrink-0 whitespace-nowrap py-3 font-playfair text-[30px] font-semibold tracking-wide text-[#82505B] sm:text-[36px] lg:text-[48px]">
+                    GLOW RITUAL
+                </a>
+                <!-- Navigation -->
+                <nav
+                    class="hidden items-center gap-5 py-7.25 font-inter text-[14px] font-semibold leading-4 text-nav lg:flex">
+                    <a href="./All-prodect.html" class="nav-link"> Skincare </a>
+                    <a href="#" class="nav-link"> Cosmetics </a>
+                    <a href="#" class="nav-link"> Perfumes </a>
+                    <a href="#" class="nav-active"> New Arivales </a>
+                    <a href="#" class="nav-link"> Best sellers </a>
+                    <a href="./contact-Us.html" class="nav-link"> Rituals </a>
+                </nav>
+                <!-------- Icons --------->
+                <div class="flex shrink-0 items-center gap-3 sm:gap-4 xl:gap-6 text-[#82505b]">
+                    <a class="icon-btn hidden sm:block">
+                        <img src="./assets/img/icons/searche.svg" alt="this is image the icon searche" />
+                    </a>
+                    <a class="icon-btn hidden sm:block">
+                        <img src="./assets/img/icons/hearticoons.svg" alt="this is hert icon" />
+                    </a>
+                    <a href="./Login-Register.html" class="icon-btn hidden sm:block">
+                        <img src="./assets/img/icons/personal.svg" alt="this is the icons prsonal" />
+                    </a>
+                    <a class="icon-btn hidden sm:block">
+                        <img src="./assets/img/icons/Shopping-Cart.svg" alt="this is the icon Shopping cart" />
+                    </a>
+                    <!------------- Mobile Menu ------------------->
+                    <a class="icon-bt text-secondery text-lg lg:hidden">
+                        <img src="./assets/img/icons/mun.svg" alt="this is mune icons" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================BREADCRUMB================== -->
+
+    <div class="mx-auto w-full max-w-7xl px-4 pt-6 sm:px-6 md:px-8 lg:px-10 xl:px-16">
+        <nav class="flex flex-wrap items-center gap-2 text-xs text-[#8A7C76]" aria-label="Breadcrumb">
+            <a href="index.html" class="transition-colors hover:text-[#82505B]">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <a href="ALL-prodect.html" class="transition-colors hover:text-[#82505B]">
+                All Products
+            </a>
+
+            <span>/</span>
+
+            <span class="text-primary"> Luminous Gold Elixir </span>
+        </nav>
+    </div>
+
+    <!-- ================= PRODUCT DETAIL SECTION ================= -->
+    <section class="w-full bg-[#FBF9F8]">
+        <div
+            class="mx-auto grid w-full max-w-[1280px] grid-cols-1 gap-8 px-4 py-10 sm:px-6 md:px-8 lg:grid-cols-[64px_minmax(0,1fr)_minmax(380px,0.9fr)] lg:gap-4 lg:px-10 xl:px-12">
+            <!-- ================= THUMBNAILS ================= -->
+            <div class="order-2 flex gap-3 lg:order-1 lg:flex-col lg:gap-4">
+                <!-- Thumbnail 1 -->
+                <button type="button"
+                    class="group h-16 w-16 shrink-0 overflow-hidden rounded-sm border-2 border-[#8B5360] bg-white lg:h-[60px] lg:w-[50px]">
+                    <img src="./assets/img/golden/imag-1.svg" alt="Luminous Gold Elixir"
+                        class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                </button>
+
+                <!-- Thumbnail 2 -->
+                <button type="button"
+                    class="group h-16 w-16 shrink-0 overflow-hidden rounded-sm border border-transparent bg-white lg:h-[60px] lg:w-[50px]">
+                    <img src="./assets/img/golden/image-2.svg" alt="Gold Flakes"
+                        class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                </button>
+
+                <!-- Thumbnail 3 -->
+                <button type="button"
+                    class="group h-16 w-16 shrink-0 overflow-hidden rounded-sm border border-transparent bg-white lg:h-[60px] lg:w-[50px]">
+                    <img src="./assets/img/golden/image-3.svg" alt="Product"
+                        class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                </button>
+            </div>
+
+            <!-- ================= MAIN PRODUCT IMAGE ================= -->
+            <div
+                class="order-1 relative aspect-square w-full overflow-hidden bg-[#F1EEEA] lg:order-2 lg:aspect-auto lg:h-[640px]">
+                <!-- Wishlist -->
+                <button type="button" aria-label="Add to wishlist"
+                    class="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#8B5360] shadow-sm backdrop-blur-sm transition duration-300 hover:bg-white hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-5 w-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0 5.25-9 10.5-9 10.5S3 13.5 3 8.25A4.25 4.25 0 0 1 7.25 4c1.74 0 3.25 1.02 4.25 2.52A5.02 5.02 0 0 1 15.75 4 4.25 4.25 0 0 1 20 8.25Z" />
+                    </svg>
+                </button>
+
+                <!-- Main Image -->
+                <img src="./assets/img/login/bg-login.svg" alt="Luminous Gold Elixir"
+                    class="h-full w-full object-cover" />
+            </div>
+
+            <!-- ================= PRODUCT INFORMATION ================= -->
+            <div class="order-3 flex w-full flex-col px-0 lg:px-4 xl:px-6">
+                <!-- Badge -->
+                <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#9A6A00]">
+                    Best Seller
+                </p>
+
+                <!-- Product Title -->
+                <h1
+                    class="mt-3 max-w-lg font-['Playfair_Display'] text-4xl leading-[1.05] tracking-[-0.02em] text-[#8B5360] sm:text-5xl">
+                    Luminous Gold
+                    <br />
+                    Elixir
+                </h1>
+
+                <!-- Rating -->
+                <div class="mt-3 flex items-center gap-2">
+                    <div class="flex gap-0.5 text-[13px] text-[#9A6A00]">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                    </div>
+
+                    <span class="text-[10px] text-[#514345]">
+                        4.9 / 5.0 (248 Reviews)
+                    </span>
+                </div>
+
+                <!-- Price -->
+                <p class="mt-5 font-['Playfair_Display'] text-2xl text-[#8B5360]">
+                    $98.00
+                </p>
+
+                <!-- Description -->
+                <p class="mt-4 max-w-xl text-[12px] leading-5 text-[#625957]">
+                    A celestial fusion of 24k gold flakes and botanical oils designed to
+                    illuminate your complexion from within. This ritualistic oil absorbs
+                    instantly, leaving a weightless silken finish and a soft-focus glow
+                    that lasts all day.
+                </p>
+
+                <!-- Divider -->
+                <div class="my-5 h-px w-full bg-[#E7DFDC]"></div>
+
+                <!-- Quantity -->
+                <div class="flex items-center justify-between">
+                    <span class="text-[11px] font-semibold text-[#514345]">
+                        Select Quantity
+                    </span>
+
+                    <div class="flex h-8 items-center overflow-hidden rounded-md border border-[#D9CFCC]">
+                        <button type="button"
+                            class="flex h-full w-8 items-center justify-center text-xs text-[#514345] transition hover:bg-[#F2ECE9]">
+                            −
+                        </button>
+
+                        <span class="flex h-full w-8 items-center justify-center text-xs text-[#514345]">
+                            1
+                        </span>
+
+                        <button type="button"
+                            class="flex h-full w-8 items-center justify-center text-xs text-[#514345] transition hover:bg-[#F2ECE9]">
+                            +
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Add To Cart -->
+                <button type="button"
+                    class="mt-4 flex h-10 w-full items-center justify-center gap-2 rounded-md bg-[#8B5360] text-[10px] font-medium uppercase tracking-[0.08em] text-white transition duration-300 hover:bg-[#70404B]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.836l.383 1.437M7.5 14.25h9.75l3-9H5.106M7.5 14.25 5.106 5.273M7.5 14.25l-1.125 3h12.375M9 19.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm8.25 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+
+                    Add To Cart
+                </button>
+
+                <!-- Divider -->
+                <div class="mt-5 h-px w-full bg-[#E7DFDC]"></div>
+
+                <!-- Tabs -->
+                <div class="mt-4">
+                    <div class="flex items-center gap-6 border-b border-[#E7DFDC]">
+                        <button type="button" class="relative pb-3 text-[10px] font-semibold text-[#8B5360]">
+                            Ingredients
+
+                            <span class="absolute bottom-0 left-0 h-[2px] w-full bg-[#8B5360]"></span>
+                        </button>
+
+                        <button type="button" class="pb-3 text-[10px] text-[#514345] transition hover:text-[#8B5360]">
+                            How To Use
+                        </button>
+
+                        <button type="button" class="pb-3 text-[10px] text-[#514345] transition hover:text-[#8B5360]">
+                            Shipping
+                        </button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <p class="mt-4 text-[10px] leading-4 text-[#625957]">
+                        24K Pure Gold, Squalane, Rosehip Seed Oil, Marula Oil, Jasmine
+                        Sambac Absolute. Our ingredients are sustainably sourced and 100%
+                        vegan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ================= COMPLETE THE RITUAL ================= -->
+    <section class="container ritual-section">
+        <!-- Section Header -->
+        <div class="ritual-header">
+            <!-- Title & Description -->
+            <div class="ritual-header-content">
+                <h2 class="ritual-title">Complete the Ritual</h2>
+
+                <p class="ritual-description">
+                    Everything you need to complete your beauty ritual.
+                </p>
+            </div>
+
+            <!-- View All -->
+            <a href="./All-prodect.html" class="ritual-link">
+                <span>View All Products</span>
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+
+        <!-- Products -->
+        <div class="ritual-products">
+            <!-- ================= PRODUCT 1 ================= -->
+
+            <article class="ritual-card group">
+                <!-- Product Image -->
+                <a href="./product-details.html" class="ritual-image-wrapper">
+                    <img src="./assets/img/Luminous-Gold/Luminous-Gold-1.svg" alt="Luminous Gold Elixir"
+                        class="ritual-image group-hover:scale-105" />
+                </a>
+
+                <!-- Product Info -->
+                <div class="ritual-info">
+                    <a href="./product-details.html">
+                        <h3 class="ritual-name group-hover:text-[#82505B]">
+                            Luminous Gold Elixir
+                        </h3>
+                    </a>
+
+                    <p class="ritual-price">$68</p>
+                </div>
+            </article>
+
+            <!-- ================= PRODUCT 2 ================= -->
+
+            <article class="ritual-card group">
+                <!-- Product Image -->
+                <a href="./product-details.html" class="ritual-image-wrapper">
+                    <img src="./assets/img/Luminous-Gold/Luminous-Gold-2.svg" alt="Radiant Glow Serum"
+                        class="ritual-image group-hover:scale-105" />
+                </a>
+
+                <!-- Product Info -->
+                <div class="ritual-info">
+                    <a href="./product-details.html">
+                        <h3 class="ritual-name group-hover:text-[#82505B]">
+                            Radiant Glow Serum
+                        </h3>
+                    </a>
+
+                    <p class="ritual-price">$54</p>
+                </div>
+            </article>
+
+            <!-- ================= PRODUCT 3 ================= -->
+
+            <article class="ritual-card group">
+                <!-- Product Image -->
+                <a href="./product-details.html" class="ritual-image-wrapper">
+                    <img src="./assets/img/Luminous-Gold/Luminous-Gold-3.svg" alt="Velvet Skin Cream"
+                        class="ritual-image group-hover:scale-105" />
+                </a>
+
+                <!-- Product Info -->
+                <div class="ritual-info">
+                    <a href="./product-details.html">
+                        <h3 class="ritual-name group-hover:text-[#82505B]">
+                            Velvet Skin Cream
+                        </h3>
+                    </a>
+                    <p class="ritual-price">$58</p>
+                </div>
+            </article>
+
+            <!-- ================= PRODUCT 4 ================= -->
+
+            <article class="ritual-card group">
+                <!-- Product Image -->
+                <a href="./product-details.html" class="ritual-image-wrapper">
+                    <img src="./assets/img/Luminous-Gold/Luminous-Gold-4.svg" alt="Rose Renewal Mask"
+                        class="ritual-image group-hover:scale-105" />
+                </a>
+
+                <!-- Product Info -->
+                <div class="ritual-info">
+                    <a href="./product-details.html">
+                        <h3 class="ritual-name group-hover:text-[#82505B]">
+                            Rose Renewal Mask
+                        </h3>
+                    </a>
+
+                    <p class="ritual-price">$62</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+    <!--================ Customer Reviews Section=================== -->
+    <section class="w-full rounded-3xl bg-[#F6F3F2] px-6 py-16 sm:px-10 md:px-16 lg:px-24 xl:px-32">
+        <div class="mx-auto flex w-full max-w-4xl flex-col gap-6">
+            <!-- Section Header -->
+            <div class="flex w-full flex-col items-start gap-4">
+                <!-- Heading -->
+                <div class="flex w-full flex-col items-center">
+                    <h2 class="font-['Playfair_Display'] text-[32px] font-semibold leading-10 text-[#82505B]">
+                        Voices of Radiance
+                    </h2>
+                </div>
+
+                <!-- Rating -->
+                <div class="flex w-full flex-col items-center gap-2">
+                    <!-- Stars -->
+                    <div class="flex h-[4.75] items-center">
+                        <span class="text-[20px] leading-4.75 text-[#795905]">★</span>
+                        <span class="text-[20px] leading-4.75 text-[#795905]">★</span>
+                        <span class="text-[20px] leading-4.75 text-[#795905]">★</span>
+                        <span class="text-[20px] leading-4.75 text-[#795905]">★</span>
+                        <span class="text-[20px] leading-4.75 text-[#795905]">★</span>
+                    </div>
+
+                    <!-- Rating Text -->
+                    <p class="font-['Inter'] text-center text-[18px] font-normal leading-7 text-secondery">
+                        Based on 248 glowing reviews
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="flex w-full flex-col gap-6 pt-6">
+                <!-- Review 1 -->
+                <article class="flex w-full flex-col gap-2 border-b border-[rgba(213,194,196,0.3)] pb-6">
+                    <!-- Author + Stars -->
+                    <div class="flex w-full items-start justify-between gap-4">
+                        <!-- Author Info -->
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-['Inter'] text-sm font-semibold leading-4 tracking-[0.7px] text-[#82505B]">
+                                ELENA V.
+                            </h3>
+
+                            <p class="font-['Inter'] text-sm font-normal leading-5 text-primary">
+                                Verified Purchase • 2 weeks ago
+                            </p>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="flex items-center">
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                        </div>
+                    </div>
+
+                    <!-- Review Title -->
+                    <div class="flex w-full flex-col pt-2">
+                        <h4 class="font-['Playfair_Display'] text-2xl font-medium leading-8 text-secondery">
+                            Pure luxury in a bottle.
+                        </h4>
+                    </div>
+
+                    <!-- Review Text -->
+                    <div class="flex w-full flex-col">
+                        <p class="font-['Inter'] text-base font-normal italic leading-6.5 text-primary">
+                            "I have tried countless serums, but this elixir is in a league
+                            of its own. It feels like liquid silk on my skin and provides a
+                            glow that doesn't look oily—just healthy and hydrated. The scent
+                            is divine, turning my evening skincare into a true ritual."
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Review 2 -->
+                <article class="flex w-full flex-col gap-2 border-b border-[rgba(213,194,196,0.3)] pb-6">
+                    <!-- Author + Stars -->
+                    <div class="flex w-full items-start justify-between gap-4">
+                        <!-- Author Info -->
+                        <div class="flex flex-col items-start">
+                            <h3 class="font-['Inter'] text-sm font-semibold leading-4 tracking-[0.7px] text-[#82505B]">
+                                MARCUS T.
+                            </h3>
+
+                            <p class="font-['Inter'] text-sm font-normal leading-5 text-primary">
+                                Verified Purchase • 1 month agoVerified Buyer
+                            </p>
+                        </div>
+
+                        <!-- Stars -->
+                        <div class="flex items-center">
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                            <span class="text-[12px] leading-3 text-[#795905]">★</span>
+                        </div>
+                    </div>
+
+                    <!-- Review Title -->
+                    <div class="flex w-full flex-col pt-2">
+                        <h4 class="font-['Playfair_Display'] text-2xl font-medium leading-8 text-secondery">
+                            Worth every single penny.
+                        </h4>
+                    </div>
+
+                    <!-- Review Text -->
+                    <div class="flex w-full flex-col">
+                        <p class="font-['Inter'] text-base font-normal italic leading-6.5 text-primary">
+                            The texture is incredible. It sinks in immediately and my skin
+                            looks visibly more vibrant after just three days. It's rare for
+                            a product to live up to such high expectations, but GLOW RITUAL
+                            has mastered it.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Button -->
+                <div class="flex w-full justify-center pt-0">
+                    <a href="#reviews"
+                        class="flex h-10.5 items-center justify-center rounded-lg border border-[#795905] px-8 font-['Inter'] text-sm font-semibold leading-4 tracking-[0.7px] text-[#795905] transition-colors duration-300 hover:bg-[#795905] hover:text-white">
+                        Load More Reviews
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="mt-40.25 border-t border-[#D5C2C4] bg-[#EAE8E7] max-md:hidden">
+        <div class="container flex flex-col gap-12 py-20">
+            <!-- Footer Columns -->
+
+            <div class="grid grid-cols-4 gap-12">
+                <!-- ================================
+           BRAND INFO
+      ================================= -->
+
+                <div class="flex flex-col gap-4 pb-5.5">
+                    <a href="#" class="font-playfair text-[32px] font-semibold leading-10 text-[#82505B]">
+                        GLOW RITUAL
+                    </a>
+
+                    <p class="font-inter text-[16px] font-normal leading-6 text-primary">
+                        Elevating daily routines into sacred self-care rituals. Crafted
+                        for the modern, radiant woman.
+                    </p>
+
+                    <!-- Social Links -->
+
+                    <div class="flex items-center gap-4 pt-4">
+                        <a href="#" class="footer-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ================================
+           DISCOVERY
+      ================================= -->
+
+                <div class="flex flex-col gap-6">
+                    <h4 class="footer-heading">DISCOVERY</h4>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link"> Skincare </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Cosmetics </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Perfumes </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> New Arrivals </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Best Sellers </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ================================
+           ASSISTANCE
+      ================================= -->
+
+                <div class="flex flex-col gap-6">
+                    <h4 class="footer-heading">ASSISTANCE</h4>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link"> Shipping & Returns </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Contact Support </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Privacy Policy </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Store Locator </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link"> Sustainability </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ================================
+           OUR ATELIER
+      ================================= -->
+
+                <div class="flex flex-col gap-2 pb-18">
+                    <h4 class="footer-heading">OUR ATELIER</h4>
+
+                    <p class="pt-2 footer-paragraph">124 Avenue des Champs-Élysées</p>
+
+                    <p class="footer-paragraph">Paris, France</p>
+
+                    <a href="#" class="pt-2 footer-paragraph transition hover:text-[#82505B]">
+                        contact@glowritual.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- ================================
+         BOTTOM BAR
+    ================================= -->
+
+            <div class="flex items-center justify-between border-t border-[#D5C2C4]/30 py-8">
+                <p class="fotter-paragraf opacity-70">
+                    © 2025 GLOW RITUAL. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

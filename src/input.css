@@ -608,30 +608,30 @@
 /* Auth Main */
 
 @utility auth-main {
-    @apply relative flex min-h-screen w-full
-           items-end justify-center
-           px-5 pt-[228px] pb-20
+    @apply relative
+          flex w-full
+           items-center justify-center
+           px-5
+           pt-[92.5px]
+           pb-[92.5px]
            lg:min-h-0
-           lg:h-[927px]
-           lg:items-center
-           lg:px-16
-           lg:pt-[172.5px]
-           lg:pb-[92.5px];
+           lg:h-auto
+           lg:px-35;
 }
 
 
 /* Auth Card */
 
 @utility auth-card {
-    @apply relative flex w-full max-w-[448px]
+    @apply relative flex w-full max-w-md
            flex-col overflow-hidden
-           rounded-t-[24px]
+           rounded-t-3xl
            border border-[#EAE8E7]
            bg-[#FBF9F8]/85
            shadow-[0_1px_2px_rgba(27,28,28,0.05)]
            backdrop-blur-md
-           lg:h-[662px]
-           lg:max-w-[1000px]
+           lg:h-165.5
+           lg:max-w-250
            lg:flex-row
            lg:rounded-xl
            lg:bg-white
@@ -1022,4 +1022,197 @@
            bg-gradient-to-b
            from-transparent via-[#FBF9F8]
            to-[#FBF9F8];
+}
+
+
+
+/* ========================================
+   GLOW RITUAL
+   LUMINOUS GOLD ELIXIR - PRODUCT DETAIL
+======================================== */
+
+@layer components {
+
+    .product-detail-main-image {
+        @apply h-full w-full object-cover;
+    }
+
+    .product-detail-thumbnail {
+        @apply aspect-square w-full cursor-pointer object-cover transition-opacity duration-300 hover:opacity-70;
+    }
+
+    .product-detail-info {
+        @apply flex flex-col;
+    }
+
+    .product-detail-quantity {
+        @apply flex h-12 w-fit items-center border border-[#D8CFCC];
+    }
+
+    .product-detail-quantity-button {
+        @apply flex h-full w-11 items-center justify-center text-[#514345] transition-colors duration-200 hover:bg-[#F1EAE7];
+    }
+
+    .product-detail-quantity-number {
+        @apply min-w-10 text-center text-sm text-[#514345];
+    }
+
+    .product-detail-add-cart {
+        @apply flex min-h-12 w-full items-center justify-center bg-[#514345] px-6 text-sm font-medium uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-[#82505B];
+    }
+
+    .product-detail-wishlist {
+        @apply flex min-h-12 items-center justify-center border border-[#514345] px-6 text-[#514345] transition-all duration-300 hover:bg-[#514345] hover:text-white;
+    }
+
+    .product-detail-info-row {
+        @apply flex items-center justify-between border-t border-[#DDD5D1] py-4;
+    }
+
+    .product-detail-info-row:last-child {
+        @apply border-b;
+    }
+
+}
+
+/* ========================================
+   COMPLETE THE RITUAL
+======================================== */
+
+/* Section */
+
+@utility ritual-section {
+    @apply flex w-full flex-col gap-6;
+}
+
+
+/* Section Header */
+
+@utility ritual-header {
+    @apply flex w-full flex-col gap-4
+           border-b border-[#D5C2C4]/30
+           pb-4
+           sm:flex-row
+           sm:items-end
+           sm:justify-between;
+}
+
+
+/* Header Content */
+
+@utility ritual-header-content {
+    @apply flex w-full flex-col gap-2
+           sm:max-w-[386.44px];
+}
+
+
+/* Section Title */
+
+@utility ritual-title {
+    @apply font-playfair
+           text-[28px]
+           font-semibold
+           leading-10
+           text-[#82505B]
+           sm:text-[32px];
+}
+
+
+/* Section Description */
+
+@utility ritual-description {
+    @apply font-inter
+           text-[14px]
+           font-normal
+           leading-6
+           text-primary
+           sm:text-[16px];
+}
+
+
+/* View All Link */
+
+@utility ritual-link {
+    @apply flex shrink-0 items-center gap-1
+           font-inter
+           text-[13px]
+           font-semibold
+           leading-4
+           tracking-[0.7px]
+           text-[#795905]
+           transition
+           hover:opacity-70
+           sm:text-[14px];
+}
+
+
+/* Products Grid */
+
+@utility ritual-products {
+    @apply grid w-full
+           grid-cols-2
+           gap-4
+           sm:gap-5
+           lg:grid-cols-4
+           lg:gap-6;
+}
+
+
+/* Product Card */
+
+@utility ritual-card {
+    @apply flex min-w-0 flex-col;
+}
+
+
+/* Product Image Wrapper */
+
+@utility ritual-image-wrapper {
+    @apply relative block
+           aspect-[270/337.5]
+           w-full
+           overflow-hidden
+           rounded-xl
+           bg-[#F0EDED];
+}
+
+
+/* Product Image */
+
+@utility ritual-image {
+    @apply h-full w-full
+           object-cover
+           transition duration-500;
+}
+
+
+/* Product Info */
+
+@utility ritual-info {
+    @apply mt-4 flex flex-col gap-0;
+}
+
+
+/* Product Name */
+
+@utility ritual-name {
+    @apply font-playfair
+           text-[20px]
+           font-medium
+           leading-8
+           text-secondery
+           transition
+           sm:text-[24px];
+}
+
+
+/* Product Price */
+
+@utility ritual-price {
+    @apply font-inter
+           text-[14px]
+           font-normal
+           leading-6
+           text-primary
+           sm:text-[16px];
 }
