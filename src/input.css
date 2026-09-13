@@ -409,7 +409,7 @@
 }
 
 /*footer paragraph*/
-@utility footer-paragraph {
+@utility fotter-paragraf {
    @apply font-inter text-[16px] font-normal leading-6 text-primary;
 }
 
@@ -560,7 +560,7 @@
 /* Auth Header Container */
 
 @utility auth-header-container {
-    @apply mx-auto flex h-20 w-full max-w-[1280px]
+    @apply mx-auto flex h-20 w-full max-w-7xl
            items-center justify-between
            px-5
            sm:px-8
@@ -663,7 +663,7 @@
 
 @utility auth-editorial-gradient {
     @apply absolute inset-0
-           bg-gradient-to-b
+           bg-linear-to-b
            from-transparent
            to-[#82505B]/20;
 }
@@ -1050,19 +1050,19 @@
     }
 
     .product-detail-quantity-button {
-        @apply flex h-full w-11 items-center justify-center text-[#514345] transition-colors duration-200 hover:bg-[#F1EAE7];
+        @apply flex h-full w-11 items-center justify-center text-primary transition-colors duration-200 hover:bg-[#F1EAE7];
     }
 
     .product-detail-quantity-number {
-        @apply min-w-10 text-center text-sm text-[#514345];
+        @apply min-w-10 text-center text-sm text-primary;
     }
 
     .product-detail-add-cart {
-        @apply flex min-h-12 w-full items-center justify-center bg-[#514345] px-6 text-sm font-medium uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-[#82505B];
+        @apply flex min-h-12 w-full items-center justify-center bg-primary px-6 text-sm font-medium uppercase tracking-[0.12em] text-white transition-all duration-300 hover:bg-[#82505B];
     }
 
     .product-detail-wishlist {
-        @apply flex min-h-12 items-center justify-center border border-[#514345] px-6 text-[#514345] transition-all duration-300 hover:bg-[#514345] hover:text-white;
+        @apply flex min-h-12 items-center justify-center border border-primary px-6 text-primary transition-all duration-300 hover:bg-primary hover:text-white;
     }
 
     .product-detail-info-row {
